@@ -1,0 +1,5 @@
+package pageObjects.android;
+
+public class CartPage {
+
+}

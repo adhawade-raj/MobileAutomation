@@ -1,0 +1,12 @@
+package AppiumTutorials;
+
+public class ExtentReport {
+
+	
+	@BeforeTest
+	public void config() {
+		
+		
+	}
+	
+}

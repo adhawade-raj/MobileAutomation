@@ -1,0 +1,17 @@
+
+
+public class Snippet {
+	@DataProvider
+		public Object[][] getData() throws IOException
+		{
+			List<HashMap<String, String>>	data =getJsonData(System.getProperty("user.dir")+"//src//test//java//org//rahulshettyacademy//testData//eCommerce.json");
+		//	return new Object[][] { {"rahul shetty","female","Argentina"},{"shetty MR","male","Argentina"}  };
+			
+			
+			return new Object[][] { {data.get(0)},{data.get(1)}  };
+		}
+		
+		
+		//key-name ,value - rahul shetty
+		// {   {hash},   {hash}    }  
+}

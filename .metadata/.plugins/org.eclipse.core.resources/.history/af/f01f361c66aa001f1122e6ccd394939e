@@ -1,0 +1,47 @@
+package _AppiumFramework._AppiumFramework;
+
+import java.util.HashMap;
+import java.util.List;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import pageObjects.android.FormPage;
+
+public class Ecommerce_DataDrivenTest3_JSONFile extends BaseTest {
+
+	
+	
+	@BeforeMethod
+	public void preSetup()
+	{
+		FormPage formPage = new FormPage(driver);
+		formPage.setActivity();
+	}
+	
+	
+	@Test(dataProvider="getData")
+	public void dataDrivenTest_WithJSONFile(HashMap<String,String> input) throws InterruptedException{
+		FormPage formPage = new FormPage(driver);
+		formPage.setNameField(input.get("name"));
+		formPage.setGender(input.get("gender"));
+		formPage.setCountrySelection(input.get("country"));
+
+		formPage.submitButton();
+	}
+	
+	
+	@DataProvider
+	public Object[][] getData() throws IOException
+	{
+		List<HashMap<String, String>>	data =getJsonData(System.getProperty("user.dir")+"//src//test//java//org//rahulshettyacademy//testData//eCommerce.json");
+	//	return new Object[][] { {"rahul shetty","female","Argentina"},{"shetty MR","male","Argentina"}  };
+		return new Object[][] { {data.get(0)},{data.get(1)}  };
+	}
+
+	//key-name ,value - rahul shetty
+	// {   {hash},   {hash}    }  
+		
+	}
+}

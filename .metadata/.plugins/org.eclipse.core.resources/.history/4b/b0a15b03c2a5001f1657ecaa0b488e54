@@ -1,0 +1,12 @@
+package AppiumTutorials;
+
+public class E01_TS01_StoreFormFilling {
+
+	
+	
+	@Test
+	public void formFilling() {
+		
+		
+	}
+}

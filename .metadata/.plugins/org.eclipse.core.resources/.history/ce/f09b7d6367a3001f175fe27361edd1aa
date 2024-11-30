@@ -1,0 +1,12 @@
+package AppiumTutorials;
+
+public class C02_GestureScrolling {
+
+	
+	
+	@Test
+	public void scrollingGesture() {
+		
+		
+	}
+}

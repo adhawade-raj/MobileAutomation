@@ -1,0 +1,32 @@
+package _AppiumFramework._AppiumFramework;
+
+import org.testng.annotations.Test;
+
+import pageObjects.android.FormPage;
+import pageObjects.android.ProductCatalouge;
+
+public class EcommerceTest extends BaseTest {
+
+	
+	@Test
+	public void formFilltest() {
+		FormPage formPage = new FormPage(driver);
+		formPage.setCountrySelection("Argentina");
+		formPage.setNameField("Raj");
+		formPage.setGender("female");
+		formPage.submitButton();
+		
+		ProductCatalouge productCatalogue = new ProductCatalouge(driver);
+		
+//		productCatalouge.addToCart1("Jordan 6 Rings");
+//		productCatalouge.addToCart1("Jordan Lift Off");
+		
+		productCatalogue.addItemToCartByIndex(0);
+		productCatalogue.addItemToCartByIndex(0);
+		
+		productCatalouge.goToCartPage();
+		
+		
+		
+	}
+}

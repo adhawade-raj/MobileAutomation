@@ -1,0 +1,16 @@
+package AppiumTutorials;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+public class E01_TS01_StoreFormFilling extends BaseTest_StoreAPK {
+
+	
+	
+	@Test
+	public void formFilling() {
+		
+	driver.findElement(By.id("android:id/text1"));
+		
+	}
+}

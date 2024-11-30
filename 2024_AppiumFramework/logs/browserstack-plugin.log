@@ -1,0 +1,125 @@
+19:37:04.779 [main] INFO  c.b.launchers.LaunchMavenCommand - Executing maven archetype command - browserstack-sdk-archetype-integrate
+19:37:04.889 [main] INFO  c.b.launchers.LaunchMavenCommand - The maven properties for launcher are [archetypeArtifactId=browserstack-sdk-archetype-integrate, BROWSERSTACK_ACCESS_KEY=PN7E25RbGwnEsXqejW3r, groupId=com.browserstack, BROWSERSTACK_APP=bs://sample.app, BROWSERSTACK_FRAMEWORK=java, version=1.0, PROJECT_NAME=BrowserStack Sample, archetypeVersion=1.5, archetypeGroupId=com.browserstack, artifactId=java-archetype-integrate, BROWSERSTACK_USERNAME=rajadhawade_Z5rVqE, BUILD_NAME=browserstack build, BROWSERSTACK_SOURCE=java:appium-eclipse:v1.0.8]
+19:37:21.524 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+19:37:21.524 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+19:37:21.527 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/2024_AppiumFramework
+19:37:21.527 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+19:37:21.528 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+19:37:21.529 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/2024_AppiumFramework
+20:10:22.768 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+20:10:22.768 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:10:22.768 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/2024_AppiumFramework
+20:10:22.768 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+20:10:22.768 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:10:22.768 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/2024_AppiumFramework
+20:22:27.780 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+20:22:27.780 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:22:27.781 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/2024_AppiumFramework
+20:22:27.781 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+20:22:27.781 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:22:27.781 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/2024_AppiumFramework
+20:33:25.716 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+20:33:25.716 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:33:25.717 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/2024_AppiumFramework
+20:33:25.717 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+20:33:25.717 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:33:25.718 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/2024_AppiumFramework
+20:34:39.891 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+20:34:39.891 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:34:39.891 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/2024_AppiumFramework
+20:34:39.891 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+20:34:39.891 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:34:39.891 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/2024_AppiumFramework
+20:34:55.335 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+20:34:55.335 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:34:55.335 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/2024_AppiumFramework
+20:34:55.336 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+20:34:55.336 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:34:55.337 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/2024_AppiumFramework
+20:35:11.059 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+20:35:11.059 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:35:11.059 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/2024_AppiumFramework
+20:35:11.059 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+20:35:11.059 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:35:11.059 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/2024_AppiumFramework
+20:35:33.370 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+20:35:33.372 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:35:33.372 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/2024_AppiumFramework
+20:35:33.372 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+20:35:33.372 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:35:33.373 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/2024_AppiumFramework
+20:45:53.932 [Worker-89: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+20:45:53.934 [Worker-89: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:45:53.935 [Worker-89: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.8}
+20:45:53.938 [Worker-89: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+20:52:16.826 [Worker-88: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+20:52:16.827 [Worker-88: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:52:16.827 [Worker-88: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.8}
+20:52:16.828 [Worker-88: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+20:56:21.583 [Worker-92: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+20:56:21.584 [Worker-92: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:56:21.584 [Worker-92: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.8}
+20:56:21.588 [Worker-92: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+20:57:32.712 [Worker-98: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+20:57:32.713 [Worker-98: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:57:32.713 [Worker-98: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.8}
+20:57:32.718 [Worker-98: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+20:57:51.891 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+20:57:51.891 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:57:51.891 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/2024_AppiumFramework
+20:57:51.891 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+20:57:51.891 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:57:51.891 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/2024_AppiumFramework
+20:58:00.033 [Worker-99: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+20:58:00.033 [Worker-99: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:58:00.033 [Worker-99: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.8}
+20:58:00.035 [Worker-99: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+20:58:37.998 [Worker-92: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+20:58:37.999 [Worker-92: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:58:37.999 [Worker-92: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.8}
+20:58:38.001 [Worker-92: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+20:59:05.159 [Worker-98: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+20:59:05.160 [Worker-98: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+20:59:05.161 [Worker-98: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.8}
+20:59:05.162 [Worker-98: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+21:01:28.910 [Worker-97: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+21:01:28.911 [Worker-97: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+21:01:28.911 [Worker-97: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.8}
+21:01:28.913 [Worker-97: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+21:05:18.056 [Worker-92: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+21:05:18.057 [Worker-92: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+21:05:18.058 [Worker-92: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.8}
+21:05:18.060 [Worker-92: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+21:06:01.558 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+21:06:01.558 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+21:06:01.558 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/2024_AppiumFramework
+21:06:01.559 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+21:06:01.559 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+21:06:01.559 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/2024_AppiumFramework
+21:06:15.344 [Worker-103: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+21:06:15.345 [Worker-103: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+21:06:15.346 [Worker-103: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.8}
+21:06:15.348 [Worker-103: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+21:06:57.151 [Worker-105: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+21:06:57.152 [Worker-105: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+21:06:57.152 [Worker-105: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.8}
+21:06:57.153 [Worker-105: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+21:07:01.462 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackEnabled
+21:07:01.462 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+21:07:01.463 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackEnabled : true P/2024_AppiumFramework
+21:07:01.463 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
+21:07:01.463 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+21:07:01.463 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/2024_AppiumFramework
+21:07:08.135 [Worker-103: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+21:07:08.136 [Worker-103: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+21:07:08.137 [Worker-103: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.8}
+21:07:08.139 [Worker-103: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+21:08:45.759 [Worker-92: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+21:08:45.759 [Worker-92: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+21:08:45.760 [Worker-92: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.8}
+21:08:45.761 [Worker-92: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+21:12:37.777 [Worker-107: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Existing javaagentArgline (BROWSERSTACK_JAVAAGENT_ARGLINE) in plugin prefs is 
+21:12:37.780 [Worker-107: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
+21:12:37.780 [Worker-107: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {BROWSERSTACK_EXEC_SOURCE=eclipse/1.0.8}
+21:12:37.784 [Worker-107: Launching 2024_AppiumFramework_src.test.resource.TestNgSuites.testng_Smoke.xml] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
+21:13:59.130 [Framework stop - Equinox Container: bf3db4b8-84bc-4118-8bfe-717ec130c871] INFO  c.b.BrowserStackPluginActivator - Stopping BrowserStack Plugin...

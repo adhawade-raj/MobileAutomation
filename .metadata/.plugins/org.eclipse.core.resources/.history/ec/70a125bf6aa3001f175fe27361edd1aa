@@ -1,0 +1,31 @@
+package AppiumTutorials;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebElement;
+import org.testng.annotations.Test;
+
+import com.google.common.collect.ImmutableMap;
+
+import io.appium.java_client.AppiumBy;
+
+public class C03_GestureSwipe extends BaseTest {
+
+	
+	
+	@Test
+	public void swipeGesture() {
+		
+		driver.findElement(AppiumBy.accessibilityId("Views")).click();
+		WebElement ele = driver.findElement(AppiumBy.accessibilityId("Gallery"));
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("mobile: swipeGesture", ImmutableMap.of
+				("elementId", ((RemoteWebElement)ele).getId()),
+				"direction", "left",
+				"percentage", 0.75
+				));
+		
+		
+	}
+}

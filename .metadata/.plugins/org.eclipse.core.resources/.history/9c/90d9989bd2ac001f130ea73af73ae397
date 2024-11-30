@@ -1,0 +1,14 @@
+package AppiumTutorials;
+
+import org.testng.annotations.BeforeTest;
+
+public class ExtentReport {
+
+	
+	@BeforeTest
+	public void config() {
+		
+		ExtentSparkReporter reporter = new ExtentSparkReporter();
+	}
+	
+}
