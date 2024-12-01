@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-01T18:11:38 IST" name="Default suite" finished-at="2024-12-01T18:12:06 IST" duration-ms="28123">
+  <suite started-at="2024-12-01T19:10:45 IST" name="Default suite" finished-at="2024-12-01T19:11:12 IST" duration-ms="27012">
     <groups>
     </groups>
-    <test started-at="2024-12-01T18:11:38 IST" name="Default test" finished-at="2024-12-01T18:12:06 IST" duration-ms="28123">
-      <class name="com.qa.TestLayer.FormFillingTest">
-        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.qa.TestLayer.FormFillingTest@22555ebf]" started-at="2024-12-01T18:11:38 IST" name="initDriver" finished-at="2024-12-01T18:11:50 IST" duration-ms="11894" status="PASS">
+    <test started-at="2024-12-01T19:10:45 IST" name="Default test" finished-at="2024-12-01T19:11:12 IST" duration-ms="27012">
+      <class name="com.qa.TestLayer.AddToCartTest">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.qa.TestLayer.AddToCartTest@292b08d6]" started-at="2024-12-01T19:10:45 IST" name="initDriver" finished-at="2024-12-01T19:10:53 IST" duration-ms="7821" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="fillFormTest_NegativeTest()[pri:0, instance:com.qa.TestLayer.FormFillingTest@22555ebf]" started-at="2024-12-01T18:11:50 IST" name="fillFormTest_NegativeTest" finished-at="2024-12-01T18:11:59 IST" duration-ms="9098" status="PASS">
+        <test-method signature="addToCartTest()[pri:0, instance:com.qa.TestLayer.AddToCartTest@292b08d6]" started-at="2024-12-01T19:10:53 IST" name="addToCartTest" finished-at="2024-12-01T19:11:12 IST" duration-ms="19144" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillFormTest_NegativeTest -->
-        <test-method signature="fillForm_PositiveTest()[pri:0, instance:com.qa.TestLayer.FormFillingTest@22555ebf]" started-at="2024-12-01T18:11:59 IST" name="fillForm_PositiveTest" finished-at="2024-12-01T18:12:06 IST" duration-ms="7057" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillForm_PositiveTest -->
-      </class> <!-- com.qa.TestLayer.FormFillingTest -->
+        </test-method> <!-- addToCartTest -->
+      </class> <!-- com.qa.TestLayer.AddToCartTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

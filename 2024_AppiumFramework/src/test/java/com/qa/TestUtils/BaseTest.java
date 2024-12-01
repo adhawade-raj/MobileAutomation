@@ -6,6 +6,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import com.qa.PageObjects.FormPage;
+import com.qa.PageObjects.ProductPage;
 import com.qa.Utils.AndroidActions;
 import com.qa.Utils.AndroidUtils;
 
@@ -17,7 +18,7 @@ public class BaseTest {
 	public AndroidUtils androidUtils;
 	public FormPage formPage;
 	public AndroidActions androidActions;
-	
+	public ProductPage productPage;
 	
 	
 	@BeforeClass(alwaysRun=true)
@@ -26,6 +27,7 @@ public class BaseTest {
 		driver = androidUtils.initDriver();
 		formPage = new FormPage(driver);
 		androidActions = new AndroidActions(driver);
+		productPage = new ProductPage(driver);
 	}
 	
 	
