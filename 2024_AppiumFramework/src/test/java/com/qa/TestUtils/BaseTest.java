@@ -1,10 +1,7 @@
 package com.qa.TestUtils;
 
-import java.time.Duration;
-
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
+import com.qa.PageObjects.CartPage;
 import com.qa.PageObjects.FormPage;
 import com.qa.PageObjects.ProductPage;
 import com.qa.Utils.AndroidActions;
@@ -19,6 +16,7 @@ public class BaseTest {
 	public FormPage formPage;
 	public AndroidActions androidActions;
 	public ProductPage productPage;
+	public CartPage cartPage;
 	
 	
 	@BeforeClass(alwaysRun=true)
@@ -28,6 +26,7 @@ public class BaseTest {
 		formPage = new FormPage(driver);
 		androidActions = new AndroidActions(driver);
 		productPage = new ProductPage(driver);
+		cartPage = new CartPage(driver);
 	}
 	
 	
