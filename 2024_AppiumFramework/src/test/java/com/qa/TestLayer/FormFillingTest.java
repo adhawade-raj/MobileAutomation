@@ -1,4 +1,4 @@
-package TestLayer;
+package com.qa.TestLayer;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
