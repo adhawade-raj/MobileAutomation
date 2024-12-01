@@ -31,7 +31,9 @@ public class FormPage {
 	private By genderRadioButtonFemale = AppiumBy.id("com.androidsample.generalstore:id/radioFemale");
 	private By letsShopButton = AppiumBy.id("com.androidsample.generalstore:id/btnLetsShop");
 	private By nextPageTitle = AppiumBy.id("com.androidsample.generalstore:id/toolbar_title");
-	
+	private By errorMessage = AppiumBy.xpath("//android.widget.Toast[@text=\"Please enter your name\"]");
+	//android.widget.FrameLayout[@resource-id=\"android:id/content\"]
+	//android.widget.Toast[@text="Please enter your name"]
 	
 	public void countrySelection(String value) {
 	driver.findElement(countryDropdown).click();
@@ -59,6 +61,11 @@ public class FormPage {
 	public String nextPageTitle() {
 		androidUtils.threadSleep(1000);
 		return driver.findElement(nextPageTitle).getText();
+	}
+	
+	public String captureErrrorMessage() {
+		androidUtils.threadSleep(100);
+		return driver.findElement(errorMessage).getDomAttribute("text");
 	}
 	
 	

@@ -6,7 +6,7 @@
       <class name="com.qa.TestLayer.FormFillingTest">
         <methods>
           <include name="initDriver"/>
-          <include name="fillFormTest"/>
+          <include name="fillFormTest_NegativeTest"/>
         </methods>
       </class> <!-- com.qa.TestLayer.FormFillingTest -->
     </classes>
