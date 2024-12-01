@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-30T20:52:31 IST" name="Suite" finished-at="2024-11-30T20:53:34 IST" duration-ms="62650">
+    <groups>
+      <group name="Smoke">
+        <method signature="EcommerceTest_End2End.formFilltest()[pri:0, instance:testRunner.EcommerceTest_End2End@63fdffcd]" name="formFilltest" class="testRunner.EcommerceTest_End2End"/>
+        <method signature="EcommerceTest_End2End.formFilltest()[pri:0, instance:testRunner.EcommerceTest_End2End@30814f43]" name="formFilltest" class="testRunner.EcommerceTest_End2End"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2024-11-30T20:52:31 IST" name="End to end Framework Test-1" finished-at="2024-11-30T20:53:29 IST" duration-ms="57503">
+      <class name="testRunner.EcommerceTest_End2End">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:testRunner.EcommerceTest_End2End@30814f43]" started-at="2024-11-30T20:52:31 IST" name="configureAppium" finished-at="2024-11-30T20:52:56 IST" duration-ms="25082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppium -->
+        <test-method signature="formFilltest()[pri:0, instance:testRunner.EcommerceTest_End2End@30814f43]" started-at="2024-11-30T20:52:56 IST" name="formFilltest" finished-at="2024-11-30T20:53:21 IST" duration-ms="24946" status="FAIL">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 0 out of bounds for length 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+at java.base/java.util.Objects.checkIndex(Objects.java:359)
+at java.base/java.util.ArrayList.get(ArrayList.java:427)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.pagefactory.ElementListInterceptor.getObject(ElementListInterceptor.java:40)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfAListOfElements.call(InterceptorOfAListOfElements.java:47)
+at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+at net.bytebuddy.renamed.java.util.ArrayList$ByteBuddy$THNcn8ab.get(Unknown Source)
+at pageObjects.android.ProductCatalogue.addItemToCartByIndex(ProductCatalogue.java:46)
+at testRunner.EcommerceTest_End2End.formFilltest(EcommerceTest_End2End.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formFilltest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testRunner.EcommerceTest_End2End@30814f43]" started-at="2024-11-30T20:53:28 IST" name="tearDown" finished-at="2024-11-30T20:53:28 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testRunner.EcommerceTest_End2End -->
+    </test> <!-- End to end Framework Test-1 -->
+    <test started-at="2024-11-30T20:52:31 IST" name="End to end Framework Test-0" finished-at="2024-11-30T20:53:31 IST" duration-ms="59813">
+      <class name="testRunner.EcommerceTest_End2End">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:testRunner.EcommerceTest_End2End@63fdffcd]" started-at="2024-11-30T20:52:31 IST" name="configureAppium" finished-at="2024-11-30T20:52:58 IST" duration-ms="27052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppium -->
+        <test-method signature="formFilltest()[pri:0, instance:testRunner.EcommerceTest_End2End@63fdffcd]" started-at="2024-11-30T20:52:58 IST" name="formFilltest" finished-at="2024-11-30T20:53:27 IST" duration-ms="28365" status="FAIL">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 0 out of bounds for length 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+at java.base/java.util.Objects.checkIndex(Objects.java:359)
+at java.base/java.util.ArrayList.get(ArrayList.java:427)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.pagefactory.ElementListInterceptor.getObject(ElementListInterceptor.java:40)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfAListOfElements.call(InterceptorOfAListOfElements.java:47)
+at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+at net.bytebuddy.renamed.java.util.ArrayList$ByteBuddy$tiHcEGSk.get(Unknown Source)
+at pageObjects.android.ProductCatalogue.addItemToCartByIndex(ProductCatalogue.java:46)
+at testRunner.EcommerceTest_End2End.formFilltest(EcommerceTest_End2End.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formFilltest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testRunner.EcommerceTest_End2End@63fdffcd]" started-at="2024-11-30T20:53:31 IST" name="tearDown" finished-at="2024-11-30T20:53:31 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testRunner.EcommerceTest_End2End -->
+    </test> <!-- End to end Framework Test-0 -->
+    <test started-at="2024-11-30T20:53:34 IST" name="Error Validations Test-1" finished-at="2024-11-30T20:53:34 IST" duration-ms="1">
+    </test> <!-- Error Validations Test-1 -->
+    <test started-at="2024-11-30T20:53:33 IST" name="Error Validations Test-0" finished-at="2024-11-30T20:53:33 IST" duration-ms="2">
+    </test> <!-- Error Validations Test-0 -->
+  </suite> <!-- Suite -->
+</testng-results>

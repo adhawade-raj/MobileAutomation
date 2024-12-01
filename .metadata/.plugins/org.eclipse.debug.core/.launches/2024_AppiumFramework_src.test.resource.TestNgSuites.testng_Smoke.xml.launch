@@ -3,10 +3,8 @@
     <mapAttribute key="org.eclipse.debug.core.environmentVariables">
         <mapEntry key="BROWSERSTACK_EXEC_SOURCE" value="eclipse/1.0.8"/>
     </mapAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="2024_AppiumFramework"/>
-    <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
     <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=""/>
     <listAttribute key="org.testng.eclipse.SUITE_TEST_LIST">
         <listEntry value="C:\Raj Setup\Mobile_Automation\2024_AppiumFramework\src\test\resource\TestNgSuites\testng_Smoke.xml"/>
