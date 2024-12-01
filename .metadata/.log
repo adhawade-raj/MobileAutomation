@@ -4010,3 +4010,6 @@ java.nio.file.FileSystemException: C:\Raj Setup\Mobile_Automation\2024_AppiumFra
 
 !ENTRY com.browserstack.eclipse 1 0 2024-12-01 10:09:57.883
 !MESSAGE Validation Result isBrowserStackDisabled : false CurrentProject : P/2024_AppiumFramework_FactoryMethod
+
+!ENTRY com.browserstack.eclipse 1 0 2024-12-01 10:11:09.655
+!MESSAGE Stopping BrowserStack Plugin...
