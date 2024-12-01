@@ -46,7 +46,8 @@ public class AndroidUtils {
 			
 			ipAddress = prop.getProperty("ipAddress");
 			System.out.println("Ip Address is : "+ipAddress);
-			port = prop.getProperty("Running Port is : "+port);
+			port = prop.getProperty("port");
+			System.out.println("Running Port is : "+port);
 	}
 	
 	/**
@@ -76,7 +77,7 @@ public class AndroidUtils {
 		System.setProperty("webdriver.chrome.driver", prop.getProperty("chromeDriverPath"));
 		options.setApp(prop.getProperty("apkFile"));
 				 try {
-					driver = new AndroidDriver(new URL("http://" +ipAddress+":"+port), options);
+					driver = new AndroidDriver(new URL("http://"+ipAddress+":"+port), options);
 				} catch (MalformedURLException e) {
 					e.printStackTrace();
 				}	

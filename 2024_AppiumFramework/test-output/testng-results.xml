@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-01T13:48:02 IST" name="Default suite" finished-at="2024-12-01T13:48:20 IST" duration-ms="17949">
+  <suite started-at="2024-12-01T13:59:28 IST" name="Default suite" finished-at="2024-12-01T13:59:44 IST" duration-ms="16552">
     <groups>
     </groups>
-    <test started-at="2024-12-01T13:48:02 IST" name="Default test" finished-at="2024-12-01T13:48:20 IST" duration-ms="17949">
-      <class name="TestLayer.FormFillingTest">
-        <test-method is-config="true" signature="initDriver()[pri:0, instance:TestLayer.FormFillingTest@292b08d6]" started-at="2024-12-01T13:48:02 IST" name="initDriver" finished-at="2024-12-01T13:48:11 IST" duration-ms="8322" status="PASS">
+    <test started-at="2024-12-01T13:59:28 IST" name="Default test" finished-at="2024-12-01T13:59:44 IST" duration-ms="16552">
+      <class name="com.qa.TestLayer.FormFillingTest">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.qa.TestLayer.FormFillingTest@292b08d6]" started-at="2024-12-01T13:59:28 IST" name="initDriver" finished-at="2024-12-01T13:59:34 IST" duration-ms="6768" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="fillFormTest()[pri:0, instance:TestLayer.FormFillingTest@292b08d6]" started-at="2024-12-01T13:48:11 IST" name="fillFormTest" finished-at="2024-12-01T13:48:20 IST" duration-ms="9578" status="PASS">
+        <test-method signature="fillFormTest()[pri:0, instance:com.qa.TestLayer.FormFillingTest@292b08d6]" started-at="2024-12-01T13:59:34 IST" name="fillFormTest" finished-at="2024-12-01T13:59:44 IST" duration-ms="9746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillFormTest -->
-      </class> <!-- TestLayer.FormFillingTest -->
+      </class> <!-- com.qa.TestLayer.FormFillingTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestLayer.FormFillingTest">
+      <class name="com.qa.TestLayer.FormFillingTest">
         <methods>
           <include name="initDriver"/>
           <include name="fillFormTest"/>
         </methods>
-      </class> <!-- TestLayer.FormFillingTest -->
+      </class> <!-- com.qa.TestLayer.FormFillingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
