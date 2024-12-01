@@ -579,3 +579,26 @@ found character '\t(TAB)' that cannot start any token. (Do not use \t(TAB) for i
 	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:491)
 	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:503)
 
+10:18:22.850 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.27.0
+10:18:22.854 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 9.3.0
+10:18:23.132 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+10:18:23.133 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : C:\Raj Setup\Mobile_Automation\2024_AppiumFramework_FactoryMethod\browserstack.yml
+10:18:23.183 [main] ERROR c.b.config.BrowserStackConfig - Malformed browserstack.yml file - while scanning for the next token
+found character '\t(TAB)' that cannot start any token. (Do not use \t(TAB) for indentation)
+ in 'string', line 45, column 1:
+    	- deviceName: Samsung Galaxy S2 ... 
+    ^
+.
+10:18:23.189 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+10:18:23.200 [main] INFO  c.b.config.BrowserStackConfig - Few SDK features were not activated as platforms object was not defined
+10:18:23.500 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - com.browserstack.utils.BrowserStackSDKException: Empty userName or accessKey
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:491)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:503)
+
