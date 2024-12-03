@@ -18,7 +18,7 @@ public class AndroidUtils {
 
 	AndroidDriver driver;
 	AppiumDriverLocalService service;
-	FileInputStream fis;
+	FileInputStream fis; 
 	Properties prop;
 	FileUtils fileUtils;
 	String fileSeparator = File.separator;
@@ -106,10 +106,9 @@ public class AndroidUtils {
 			service.stop();
 		}
 		
-		public AndroidDriver browserTearDown() {
+		public void browserTearDown() {
 //			tearDownAppiumServer();
 			driver.quit();
-			return driver;
 		}
 		
 		/**

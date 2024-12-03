@@ -32,6 +32,6 @@ public class FormFillingTest extends BaseTest{
 		String errorMessage = formPage.captureErrrorMessage();
 		System.out.println("Error message is : "+errorMessage);
 		Assert.assertEquals(errorMessage, "Please enter your name");
-//		Assert.assertTrue(errorMessage.contains("Please enter your name"), errorMessage+" : Wrong Error Message");
+//		Assert.assertTrue(errorMessage.contains("Please enter your name"), errorMessage+" : is a  Wrong Error Message");
 	}
 }

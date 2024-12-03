@@ -1,5 +1,6 @@
 package com.qa.TestUtils;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import com.qa.PageObjects.CartPage;
 import com.qa.PageObjects.FormPage;
@@ -30,9 +31,9 @@ public class BaseTest {
 	}
 	
 	
-//	@AfterClass()
-//	public void tearDown() {
-//		driver.quit();	
-//	}
+	@AfterClass()
+	public void tearDown() {
+		driver.quit();	
+	}
 	
 }
