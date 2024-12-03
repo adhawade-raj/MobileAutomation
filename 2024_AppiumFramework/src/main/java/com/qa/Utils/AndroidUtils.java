@@ -2,12 +2,11 @@ package com.qa.Utils;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.net.MalformedURLException;
+import java.io.StringReader;
 import java.net.URL;
 import java.time.Duration;
 import java.util.Properties;
+import org.apache.commons.io.FileUtils;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -21,14 +20,13 @@ public class AndroidUtils {
 	AppiumDriverLocalService service;
 	FileInputStream fis;
 	Properties prop;
-	
+	FileUtils fileUtils;
 	String fileSeparator = File.separator;
 	String configFilePath = "C:\\Raj Setup\\Mobile_Automation\\2024_AppiumFramework\\src\\test\\resource\\TestData\\config.properties".replace("\\", fileSeparator);
 	String chromeDriverPath = "C:\\Raj Setup\\ChromeDriver\\V 131\\chromedriver-win64\\chromedriver.exe".replace("\\", fileSeparator);
 	String mainJSPath= "C:\\Users\\SHRUTI\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js".replace("\\", fileSeparator);
 	String nodeJSPath = "C:\\Program Files\\nodejs\\node.exe".replace("\\", fileSeparator);;
 	String apkFile= "C:\\Raj Setup\\Mobile_Automation\\2024_Appium\\src\\test\\resource\\General-Store.apk".replace("\\", fileSeparator);
-	
 	String ipAddress;
 	String port;
 	
@@ -39,7 +37,7 @@ public class AndroidUtils {
 	}
 	
 	@SneakyThrows
-	public void initConfigProperties() {
+	public void initConfigProperties2() {
 			fis = new FileInputStream(configFilePath);
 			prop.load(fis);
 			ipAddress = prop.getProperty("ipAddress");
@@ -48,12 +46,30 @@ public class AndroidUtils {
 			System.out.println("Running Port is : "+port);
 	}
 	
+	@SneakyThrows
+	public void initConfigProperties() {
+	    // Read the file content as a string using FileUtils
+	    String configContent = FileUtils.readFileToString(new File(configFilePath), "UTF-8");
+
+	    // Load the properties using StringReader
+	    prop = new Properties();
+	    prop.load(new StringReader(configContent));
+
+	    // Retrieve property values
+	    ipAddress = prop.getProperty("ipAddress");
+	    System.out.println("IP Address is: " + ipAddress);
+
+	    port = prop.getProperty("port");
+	    System.out.println("Running Port is: " + port);
+	}
+	
 	
 	/**
 	 * To start Appium server Automatically
 	 */
 	public void appiumServerConfiguration() {
 		
+//		initConfigProperties2();
 		initConfigProperties();
 		AppiumDriverLocalService service = new AppiumServiceBuilder()
 				.withAppiumJS(new File(mainJSPath))
@@ -71,6 +87,7 @@ public class AndroidUtils {
 
 //		appiumServerConfiguration();
 		
+//		initConfigProperties2();
 		initConfigProperties();
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName(prop.getProperty("deviceName"));
