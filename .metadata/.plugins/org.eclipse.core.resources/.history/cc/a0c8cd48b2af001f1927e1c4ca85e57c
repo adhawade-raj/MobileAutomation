@@ -1,0 +1,25 @@
+package com.qa.Utils;
+
+import io.appium.java_client.AppiumBy;
+import io.appium.java_client.AppiumDriver;
+
+public class AndroidActions {
+
+	
+	AppiumDriver driver;
+	
+	public AndroidActions(AppiumDriver driver) {
+		this.driver=driver;
+	}
+	
+	/**
+	 * To scroll down to element
+	 * @param text
+	 */
+	public void scrollToText(String text) {
+	driver.findElement(AppiumBy.androidUIAutomator("new Uiscrollable (new UiSelector()).scrollIntoView(text(\""+text+"\")"));
+	}
+	
+	
+	
+}

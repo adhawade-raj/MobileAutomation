@@ -1,0 +1,7 @@
+package com.qa.TestLayer;
+
+import com.qa.TestUtils.BaseTest;
+
+public class CartPageTest extends BaseTest {
+
+}

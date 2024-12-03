@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.time.Duration"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
-    <fullyQualifiedTypeName name="org.testng.Assert"/>
     <fullyQualifiedTypeName name="io.appium.java_client.android.options.context.SupportsChromedriverUseSystemExecutableOption"/>
     <fullyQualifiedTypeName name="io.appium.java_client.android.nativekey.AndroidKey"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
@@ -10,4 +9,12 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
     <fullyQualifiedTypeName name="pageObjects.android.productCatalouge"/>
     <fullyQualifiedTypeName name="pageObjects.android.ProductCatalouge"/>
+    <fullyQualifiedTypeName name="com.qa.PageObjects.FormPage"/>
+    <fullyQualifiedTypeName name="org.testng.Assert"/>
+    <fullyQualifiedTypeName name="com.qa.Utils.AndroidUtils"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="com.qa.Utils.AndroidActions"/>
+    <fullyQualifiedTypeName name="com.qa.PageObjects.ProductPage"/>
+    <fullyQualifiedTypeName name="io.appium.java_client.AppiumBy"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
 </qualifiedTypeNameHistroy>

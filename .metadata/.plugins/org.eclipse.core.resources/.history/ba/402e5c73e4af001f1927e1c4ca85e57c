@@ -1,0 +1,18 @@
+package com.qa.TestLayer;
+
+import org.testng.annotations.Test;
+
+import com.qa.TestUtils.BaseTest;
+
+public class AddToCartTest extends BaseTest {
+	
+	
+	@Test
+	public void addToCartTest() {
+		
+		productPage.productSelection_AddToCart("Jordan 6 Rings");
+		
+	}
+	
+
+}

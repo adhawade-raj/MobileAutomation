@@ -1,0 +1,4 @@
+ipAddress=0.0.0.0
+port=4723
+deviceName=Raj_AppiumTest
+nodeExePath=C:\\Program Files\\nodejs\\node.exe

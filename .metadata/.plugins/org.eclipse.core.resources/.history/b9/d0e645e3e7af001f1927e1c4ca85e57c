@@ -1,0 +1,34 @@
+package com.qa.TestLayer;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.qa.TestUtils.BaseTest;
+
+public class AddToCartTest extends BaseTest {
+	
+
+	
+	@Test
+	public void addToCartTest() {
+		formPage.countrySelection("Argentina");
+		formPage.setName("Raj");
+		formPage.genderSelection("male");
+		formPage.letsShopButton();
+		productPage.productSelection_AddToCart("Jordan 6 Rings");
+		
+		String cartStatusAfterAddingProducts = productPage.verifyCartButtonState();
+		Assert.assertEquals(cartStatusAfterAddingProducts, "ADDED TO CART");
+		
+		productPage.productSelection_AddToCart("Jordan Lift Off");
+		
+		int productCount = productPage.verifyCountProduct();
+		Assert.assertTrue(productCount==2);
+		
+		
+		
+	}
+	
+
+}

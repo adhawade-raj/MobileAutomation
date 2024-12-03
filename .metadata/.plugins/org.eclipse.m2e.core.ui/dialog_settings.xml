@@ -26,6 +26,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.qa._AppiumFramework"/>
 			<item value="com.qa.AppiumFramework"/>
 			<item value="_AppiumFramework._AppiumFramework"/>
 			<item value="_Appium._Appium"/>
@@ -36,8 +37,8 @@
 			<item value="2024_Appium"/>
 		</list>
 		<list key="artifactId">
-			<item value="AppiumFramework"/>
 			<item value="2024_AppiumFramework"/>
+			<item value="AppiumFramework"/>
 			<item value="2024_Appium"/>
 		</list>
 		<list key="projectNameTemplate">

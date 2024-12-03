@@ -1,0 +1,38 @@
+package com.qa.TestUtils;
+
+import java.time.Duration;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
+import com.qa.PageObjects.FormPage;
+import com.qa.Utils.AndroidUtils;
+
+import io.appium.java_client.android.AndroidDriver;
+
+public class BaseTest {
+
+	AndroidDriver driver;
+	AndroidUtils androidUtils;
+	FormPage formPage;
+	
+	
+	
+	@BeforeClass(alwaysRun=true)
+	public void initDriver() {
+		
+		androidUtils = new AndroidUtils(driver);
+		driver = androidUtils.initDriver();
+		formPage = new FormPage(driver);
+		
+//		androidUtils.initDriver();
+	}
+	
+	
+//	@AfterClass()
+//	public void tearDown() {
+//		androidUtils.browserTearDown();
+//		androidUtils.tearDownAppiumServer();
+//	}
+	
+}
