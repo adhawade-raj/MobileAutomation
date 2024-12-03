@@ -12,15 +12,23 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
+import lombok.SneakyThrows;
+
 
 public class AndroidUtils {
 
-	
 	AndroidDriver driver;
 	AppiumDriverLocalService service;
 	FileInputStream fis;
 	Properties prop;
-	String configFilePath = "C:\\Raj Setup\\Mobile_Automation\\2024_AppiumFramework\\src\\test\\resource\\TestData\\config.properties";
+	
+	String fileSeparator = File.separator;
+	String configFilePath = "C:\\Raj Setup\\Mobile_Automation\\2024_AppiumFramework\\src\\test\\resource\\TestData\\config.properties".replace("\\", fileSeparator);
+	String chromeDriverPath = "C:\\Raj Setup\\ChromeDriver\\V 131\\chromedriver-win64\\chromedriver.exe".replace("\\", fileSeparator);
+	String mainJSPath= "C:\\Users\\SHRUTI\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js".replace("\\", fileSeparator);
+	String nodeJSPath = "C:\\Program Files\\nodejs\\node.exe".replace("\\", fileSeparator);;
+	String apkFile= "C:\\Raj Setup\\Mobile_Automation\\2024_Appium\\src\\test\\resource\\General-Store.apk".replace("\\", fileSeparator);
+	
 	String ipAddress;
 	String port;
 	
@@ -30,7 +38,7 @@ public class AndroidUtils {
 		prop = new Properties();
 	}
 	
-	
+	@SneakyThrows
 	public void initConfigProperties() {
 		try {
 			fis = new FileInputStream(configFilePath);
@@ -50,6 +58,7 @@ public class AndroidUtils {
 			System.out.println("Running Port is : "+port);
 	}
 	
+	
 	/**
 	 * To start Appium server Automatically
 	 */
@@ -57,8 +66,8 @@ public class AndroidUtils {
 		
 		initConfigProperties();
 		AppiumDriverLocalService service = new AppiumServiceBuilder()
-				.withAppiumJS(new File("C:/Users/SHRUTI/AppData/Roaming/npm/node_modules/appium/build/lib/main.js"))
-				.usingDriverExecutable(new File ("C:\\Program Files\\nodejs\\node.exe"))
+				.withAppiumJS(new File(mainJSPath))
+				.usingDriverExecutable(new File (nodeJSPath))
 				.withIPAddress(ipAddress).usingPort(Integer.parseInt(port)).build();
 				service.start();
 	}
@@ -74,8 +83,8 @@ public class AndroidUtils {
 		initConfigProperties();
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName(prop.getProperty("deviceName"));
-		System.setProperty("webdriver.chrome.driver", prop.getProperty("chromeDriverPath"));
-		options.setApp(prop.getProperty("apkFile"));
+		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+		options.setApp(apkFile);
 				 try {
 					driver = new AndroidDriver(new URL("http://"+ipAddress+":"+port), options);
 				} catch (MalformedURLException e) {
