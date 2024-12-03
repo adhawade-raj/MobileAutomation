@@ -10473,3 +10473,7 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Unrecognise
 2024-12-03 21:05:27,366 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Raj Setup\Mobile_Automation\2024_AppiumFramework\src\test\resources
 2024-12-03 21:05:37,859 [Worker-71: Launching FormFillingTest] INFO  c.b.BrowserStackPluginActivator - The previous launch removed.
 2024-12-03 21:05:37,861 [Worker-71: Launching FormFillingTest] INFO  c.b.BrowserStackPluginActivator - The environment variables for the launch configuration are {}
+2024-12-03 21:14:25,930 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Raj Setup\Mobile_Automation\2024_AppiumFramework\src\main\resources
+2024-12-03 21:14:25,932 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Raj Setup\Mobile_Automation\2024_AppiumFramework\src\test\resources
+2024-12-03 21:14:30,692 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Raj Setup\Mobile_Automation\2024_AppiumFramework\src\main\resources
+2024-12-03 21:14:30,693 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Raj Setup\Mobile_Automation\2024_AppiumFramework\src\test\resources
