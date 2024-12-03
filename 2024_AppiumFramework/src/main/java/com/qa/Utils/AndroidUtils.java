@@ -40,18 +40,8 @@ public class AndroidUtils {
 	
 	@SneakyThrows
 	public void initConfigProperties() {
-		try {
 			fis = new FileInputStream(configFilePath);
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-			}
-
-			try {
-				prop.load(fis);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			
+			prop.load(fis);
 			ipAddress = prop.getProperty("ipAddress");
 			System.out.println("Ip Address is : "+ipAddress);
 			port = prop.getProperty("port");
@@ -74,8 +64,9 @@ public class AndroidUtils {
 	
 	/**
 	 * To Initialize driver and apk file
-	 * @return 
+	 * @return
 	 */
+	@SneakyThrows
 	public AndroidDriver initDriver() {
 
 //		appiumServerConfiguration();
@@ -85,11 +76,8 @@ public class AndroidUtils {
 		options.setDeviceName(prop.getProperty("deviceName"));
 		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 		options.setApp(apkFile);
-				 try {
-					driver = new AndroidDriver(new URL("http://"+ipAddress+":"+port), options);
-				} catch (MalformedURLException e) {
-					e.printStackTrace();
-				}	
+			
+		driver = new AndroidDriver(new URL("http://"+ipAddress+":"+port), options);
 		implicitTimeout(10);
 		return driver;
 	}
@@ -111,12 +99,9 @@ public class AndroidUtils {
 		 * Static wait - Thread.sleep
 		 * @param value
 		 */
+		@SneakyThrows
 		public void threadSleep(int value) {
-			try {
 				Thread.sleep(value);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
 		}
 		
 		/**
@@ -133,7 +118,7 @@ public class AndroidUtils {
 		 * @param pageLoadTimeout
 		 */
 		public void pageLoadTimeout(int pageLoadTimeout) {
-			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(pageLoadTimeout));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(pageLoadTimeout));
 		}
 		
 		

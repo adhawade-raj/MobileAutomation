@@ -1,14 +1,9 @@
 package com.qa.PageObjects;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import com.qa.Utils.AndroidActions;
 import com.qa.Utils.AndroidUtils;
-
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 

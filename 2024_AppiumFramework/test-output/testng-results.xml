@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-03T19:50:19 IST" name="Default suite" finished-at="2024-12-03T19:50:53 IST" duration-ms="33892">
+  <suite started-at="2024-12-03T20:30:37 IST" name="Default suite" finished-at="2024-12-03T20:30:56 IST" duration-ms="19062">
     <groups>
     </groups>
-    <test started-at="2024-12-03T19:50:19 IST" name="Default test" finished-at="2024-12-03T19:50:53 IST" duration-ms="33892">
+    <test started-at="2024-12-03T20:30:37 IST" name="Default test" finished-at="2024-12-03T20:30:56 IST" duration-ms="19062">
       <class name="com.qa.TestLayer.FormFillingTest">
-        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.qa.TestLayer.FormFillingTest@45752059]" started-at="2024-12-03T19:50:19 IST" name="initDriver" finished-at="2024-12-03T19:50:38 IST" duration-ms="18451" status="PASS">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.qa.TestLayer.FormFillingTest@45752059]" started-at="2024-12-03T20:30:37 IST" name="initDriver" finished-at="2024-12-03T20:30:44 IST" duration-ms="6718" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="fillFormTest_NegativeTest()[pri:1, instance:com.qa.TestLayer.FormFillingTest@45752059]" started-at="2024-12-03T19:50:38 IST" name="fillFormTest_NegativeTest" finished-at="2024-12-03T19:50:47 IST" duration-ms="9720" status="PASS">
+        <test-method signature="fillFormTest_NegativeTest()[pri:1, instance:com.qa.TestLayer.FormFillingTest@45752059]" started-at="2024-12-03T20:30:44 IST" name="fillFormTest_NegativeTest" finished-at="2024-12-03T20:30:51 IST" duration-ms="7514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillFormTest_NegativeTest -->
-        <test-method signature="fillForm_PositiveTest()[pri:2, instance:com.qa.TestLayer.FormFillingTest@45752059]" started-at="2024-12-03T19:50:47 IST" name="fillForm_PositiveTest" finished-at="2024-12-03T19:50:53 IST" duration-ms="5661" status="PASS">
+        <test-method signature="fillForm_PositiveTest()[pri:2, instance:com.qa.TestLayer.FormFillingTest@45752059]" started-at="2024-12-03T20:30:51 IST" name="fillForm_PositiveTest" finished-at="2024-12-03T20:30:56 IST" duration-ms="4807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillForm_PositiveTest -->
