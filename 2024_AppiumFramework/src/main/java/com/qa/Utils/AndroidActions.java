@@ -20,6 +20,10 @@ public class AndroidActions {
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\""+text+"\"));"));
 	}
 	
+	public void scrollToText(String[] text) {
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\""+text+"\"));"));
+	}
+	
 	
 	
 }

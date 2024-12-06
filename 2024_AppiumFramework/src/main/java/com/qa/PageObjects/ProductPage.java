@@ -54,6 +54,22 @@ public class ProductPage {
 		}
 	
 	
+	public void productSelection_AddToCart_WithStream(String[] productName) {
+		androidActions.scrollToText(productName);
+		List<WebElement> productNames = driver.findElements(prodNames);
+		
+		IntStream.range(0, productNames.size())
+		.filter(i -> productNames.get(i).getText().equals(productName))
+		.findFirst()
+		.ifPresent(i ->{
+			System.out.println("Selected Product is : "+productName);
+			List<WebElement> addToCartButton = driver.findElements(addToCart);
+			addToCartButton.get(i).click();
+		});
+		
+		}
+	
+	
 	/**
 	 * To Select Product and add to cart without stream(Using for loop)
 	 * @param productName
@@ -68,6 +84,7 @@ public class ProductPage {
 				System.out.println("Selected Product is : "+productName);
 				List<WebElement> addToCartButton = driver.findElements(addToCart);
 				addToCartButton.get(i).click();
+				break;
 			}
 		}
 	}
