@@ -1,6 +1,7 @@
 package com.qa.PageObjects;
 
 import java.util.List;
+import java.util.stream.IntStream;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -31,8 +32,30 @@ public class ProductPage {
 	private By shopButton = AppiumBy.id("com.androidsample.generalstore:id/appbar_btn_cart");
 	
 	
+	
+	
 	/**
-	 * To Select Product and add to cart
+	 * To select the product using Java Stream(IntStream)
+	 * @param productName
+	 */
+	public void productSelection_AddToCart_WithStream(String productName) {
+		androidActions.scrollToText(productName);
+		List<WebElement> productNames = driver.findElements(prodNames);
+		
+		IntStream.range(0, productNames.size())
+		.filter(i -> productNames.get(i).getText().equals(productName))
+		.findFirst()
+		.ifPresent(i ->{
+			System.out.println("Selected Product is : "+productName);
+			List<WebElement> addToCartButton = driver.findElements(addToCart);
+			addToCartButton.get(i).click();
+		});
+		
+		}
+	
+	
+	/**
+	 * To Select Product and add to cart without stream(Using for loop)
 	 * @param productName
 	 */
 	public void productSelection_AddToCart(String productName) {
@@ -48,6 +71,7 @@ public class ProductPage {
 			}
 		}
 	}
+
 	
 	/**
 	 * To Verify the state the of cart button after adding the products in cart
