@@ -1,12 +1,12 @@
-package com.qa.TestLayer;
+package com.qa.test.layer;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.qa.TestUtils.BaseTest;
+import com.qa.test.utils.BaseTest;
 
-public class AddToCartDataDriven extends BaseTest {
+public class AddToCartDataDrivenWithStream extends BaseTest {
 
 	
 	@DataProvider
@@ -25,7 +25,7 @@ public class AddToCartDataDriven extends BaseTest {
 		formPage.letsShopButton();
 		
 		/**With Stream Product Selection*/
-		productPage.addMultipleProductsToCart(productNames);
+		productPage.addMultipleProductsToCartUsingStream(productNames);
 
 		/**Need to change this hard-coded value*/
 		int productCount = productPage.verifyCountProduct();

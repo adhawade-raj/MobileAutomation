@@ -1,12 +1,12 @@
-package com.qa.PageObjects;
+package com.qa.page.objects;
 
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import com.qa.Utils.AndroidActions;
-import com.qa.Utils.AndroidUtils;
+import com.qa.utils.AndroidActions;
+import com.qa.utils.AndroidUtils;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;

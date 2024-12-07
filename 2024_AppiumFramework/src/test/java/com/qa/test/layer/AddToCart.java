@@ -1,8 +1,9 @@
-package com.qa.TestLayer;
+package com.qa.test.layer;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import com.qa.TestUtils.BaseTest;
+
+import com.qa.test.utils.BaseTest;
 
 public class AddToCart extends BaseTest {
 	

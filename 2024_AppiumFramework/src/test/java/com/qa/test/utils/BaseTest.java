@@ -1,12 +1,13 @@
-package com.qa.TestUtils;
+package com.qa.test.utils;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import com.qa.PageObjects.CartPage;
-import com.qa.PageObjects.FormPage;
-import com.qa.PageObjects.ProductPage;
-import com.qa.Utils.AndroidActions;
-import com.qa.Utils.AndroidUtils;
+
+import com.qa.page.objects.CartPage;
+import com.qa.page.objects.FormPage;
+import com.qa.page.objects.ProductPage;
+import com.qa.utils.AndroidActions;
+import com.qa.utils.AndroidUtils;
 
 import io.appium.java_client.android.AndroidDriver;
 
