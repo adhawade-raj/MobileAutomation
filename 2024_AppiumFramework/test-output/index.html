@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\SHRUTI\AppData\Local\Temp\testng-eclipse-1525974271\testng-customsuite.xml</span>
+                    <span>C:\Users\SHRUTI\AppData\Local\Temp\testng-eclipse-248163298\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,12 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.qa.TestLayer.AddToCartUsingStream" class="method navigator-link" hash-for-method="addToCartTest_DataProvider(Jordan 6 Rings)">addToCartTest_DataProvider(Jordan 6 Rings)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.qa.TestLayer.AddToCartUsingStream" class="method navigator-link" hash-for-method="addToCartTest_DataProvider(Jordan Lift Off)">addToCartTest_DataProvider(Jordan Lift Off)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.qa.TestLayer.AddToCartDataDriven" class="method navigator-link" hash-for-method="addToCartTest_DataProvider([Jordan 6 Rings, Air Jordan 4 Retro])">addToCartTest_DataProvider([Jordan 6 Rings, Air Jordan 4 Retro])</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -126,84 +121,19 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.qa.TestLayer.AddToCartUsingStream</span>
+              <span class="class-name">com.qa.TestLayer.AddToCartDataDriven</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addToCartTest_DataProvider(Jordan 6 Rings)">
-                  </a> <!-- addToCartTest_DataProvider(Jordan 6 Rings) -->
+                  <a name="addToCartTest_DataProvider([Jordan 6 Rings, Air Jordan 4 Retro])">
+                  </a> <!-- addToCartTest_DataProvider([Jordan 6 Rings, Air Jordan 4 Retro]) -->
                   <span class="method-name">addToCartTest_DataProvider</span>
-                  <span class="parameters">(Jordan 6 Rings)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.qa.TestLayer.AddToCartUsingStream.addToCartTest_DataProvider(AddToCartUsingStream.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addToCartTest_DataProvider(Jordan Lift Off)">
-                  </a> <!-- addToCartTest_DataProvider(Jordan Lift Off) -->
-                  <span class="method-name">addToCartTest_DataProvider</span>
-                  <span class="parameters">(Jordan Lift Off)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [8f8640c0-72b6-40db-957d-8d6228f17657, findElement {using=id, value=android:id/text1}]
-Capabilities {appium:app: C:\Raj Setup\Mobile_Automat..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Raj Setup\Mobile_Automat..., automationName: UIAutomator2, deviceName: Raj_AppiumTest, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 14, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 8f8640c0-72b6-40db-957d-8d6228f17657
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at com.qa.PageObjects.FormPage.countrySelection(FormPage.java:34)
-	at com.qa.TestLayer.AddToCartUsingStream.addToCartTest_DataProvider(AddToCartUsingStream.java:41)
+                  <span class="parameters">([Jordan 6 Rings, Air Jordan 4 Retro])</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Product not found: Jordan 6 Rings
+	at com.qa.PageObjects.ProductPage.productSelection_AddToCart(ProductPage.java:88)
+	at com.qa.PageObjects.ProductPage.addMultipleProductsToCart(ProductPage.java:97)
+	at com.qa.TestLayer.AddToCartDataDriven.addToCartTest_DataProvider(AddToCartDataDriven.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -241,7 +171,7 @@ Session ID: 8f8640c0-72b6-40db-957d-8d6228f17657
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\SHRUTI\AppData\Local\Temp\testng-eclipse-1525974271\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\SHRUTI\AppData\Local\Temp\testng-eclipse-248163298\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -250,7 +180,7 @@ Session ID: 8f8640c0-72b6-40db-957d-8d6228f17657
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.TestLayer.AddToCartUsingStream&quot;/&gt;
+      &lt;class name=&quot;com.qa.TestLayer.AddToCartDataDriven&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -290,20 +220,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addToCartTest_DataProvider')
-data.setCell(0, 2, 'com.qa.TestLayer.AddToCartUsingStream')
-data.setCell(0, 3, 17558);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addToCartTest_DataProvider')
-data.setCell(1, 2, 'com.qa.TestLayer.AddToCartUsingStream')
-data.setCell(1, 3, 10043);
+data.setCell(0, 2, 'com.qa.TestLayer.AddToCartDataDriven')
+data.setCell(0, 3, 19800);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -318,16 +244,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.qa.TestLayer.AddToCartUsingStream</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">addToCartTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -336,7 +255,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.TestLayer.AddToCartUsingStream</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.TestLayer.AddToCartDataDriven</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initDriver</span>
                 <span class="method-start">0 ms</span>
@@ -344,18 +263,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">addToCartTest_DataProvider(Jordan 6 Rings)</span>
-                <span class="method-start">7698 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">addToCartTest_DataProvider(Jordan Lift Off)</span>
-                <span class="method-start">25259 ms</span>
+                <span class="method-name">addToCartTest_DataProvider([Jordan 6 Rings, Air Jordan 4 Retro])</span>
+                <span class="method-start">12268 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35306 ms</span>
+                <span class="method-start">32081 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -6,18 +6,26 @@ import org.testng.annotations.Test;
 
 import com.qa.TestUtils.BaseTest;
 
-public class AddToCartUsingStream extends BaseTest {
+public class AddToCartDataDrivenWithStream extends BaseTest {
 
-	@Test(enabled=false)
-	public void addToCartTest() {
+	
+	@DataProvider
+    public Object[][] getProducts() {
+        return new Object[][]{
+            {new String[]{"Jordan 6 Rings", "Air Jordan 4 Retro"}}
+        };
+    }
+	
+	
+	@Test(dataProvider="getProducts")
+	public void addToCartTest_DataProvider(String [] productNames) {
 		formPage.countrySelection("Argentina");
 		formPage.setName("Raj");
 		formPage.genderSelection("male");
 		formPage.letsShopButton();
 		
 		/**With Stream Product Selection*/
-		productPage.productSelection_AddToCart_WithStream("Jordan 6 Rings");
-		productPage.productSelection_AddToCart_WithStream("Jordan Lift Off");
+		productPage.addMultipleProductsToCartUsingStream(productNames);
 
 		/**Need to change this hard-coded value*/
 		int productCount = productPage.verifyCountProduct();
@@ -26,9 +34,5 @@ public class AddToCartUsingStream extends BaseTest {
 		String title = formPage.nextPageTitle();
 		Assert.assertTrue(title.contains("Cart"), "Next Page is not Loaded");
 	}
-	
-	
-
-	
 	
 }

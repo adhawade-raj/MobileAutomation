@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.qa.TestUtils.BaseTest;
 
-public class AddToCartTest extends BaseTest {
+public class AddToCart extends BaseTest {
 	
 	String cartStatusAfterAddingProducts;
 	

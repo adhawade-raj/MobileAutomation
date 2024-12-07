@@ -53,41 +53,56 @@ public class ProductPage {
 		
 		}
 	
-	
-	public void productSelection_AddToCart_WithStream(String[] productName) {
-		androidActions.scrollToText(productName);
-		List<WebElement> productNames = driver.findElements(prodNames);
-		
-		IntStream.range(0, productNames.size())
-		.filter(i -> productNames.get(i).getText().equals(productName))
-		.findFirst()
-		.ifPresent(i ->{
-			System.out.println("Selected Product is : "+productName);
-			List<WebElement> addToCartButton = driver.findElements(addToCart);
-			addToCartButton.get(i).click();
-		});
-		
-		}
-	
-	
 	/**
-	 * To Select Product and add to cart without stream(Using for loop)
-	 * @param productName
+	 * To Select multiple products
+	 * @param productNames
 	 */
-	public void productSelection_AddToCart(String productName) {
-		
-		androidActions.scrollToText(productName);
-		List<WebElement> productNames = driver.findElements(prodNames);
-		for(int i=0; i<productNames.size(); i++) {
-			String prodName = productNames.get(i).getText();
-			if(prodName.equals(productName)) {
-				System.out.println("Selected Product is : "+productName);
-				List<WebElement> addToCartButton = driver.findElements(addToCart);
-				addToCartButton.get(i).click();
-				break;
-			}
-		}
+	public void addMultipleProductsToCartUsingStream(String[] productNames) {
+        for (String productName : productNames) {
+        	productSelection_AddToCart_WithStream(productName);
+        }
 	}
+	
+		
+	/**
+     * Add a single product to the cart by its name.
+     * @param productName Name of the product to add to the cart.
+     */
+    public void productSelection_AddToCart(String productName) {
+        androidActions.scrollToText(productName);
+        List<WebElement> productNames = driver.findElements(prodNames);
+
+        for (int i = 0; i < productNames.size(); i++) {
+            String prodName = productNames.get(i).getText();
+
+            if (prodName.equals(productName)) {
+                System.out.println("Adding product to cart: " + productName);
+
+                // Click corresponding "Add to Cart" button
+                List<WebElement> addToCartButtons = driver.findElements(addToCart);
+                addToCartButtons.get(i).click();
+                return;
+            }
+        }
+
+        throw new RuntimeException("Product not found: " + productName);
+    }
+    
+//    	In productSelection_AddToCart:
+//    	Use return because the method has no reason to continue executing after adding the product.
+//    	Use break only if you plan to execute additional logic after the loop, which isn't the case here.
+	
+
+	/**
+	 * To Select multiple products
+	 * @param productNames
+	 */
+	public void addMultipleProductsToCart(String[] productNames) {
+        for (String productName : productNames) {
+        	productSelection_AddToCart(productName);
+        }
+	}
+	
 
 	
 	/**
