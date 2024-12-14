@@ -7,7 +7,7 @@ import com.qa.test.utils.BaseTest;
 
 public class FormFillingTest extends BaseTest {
 
-	@Test(enabled = true, priority = 2)
+	@Test(enabled = true, priority = 2, groups = { "Smoke" })
 	public void fillForm_PositiveTest() {
 
 		formPage.formFill("Argentina", "Raj", "male");
@@ -16,7 +16,7 @@ public class FormFillingTest extends BaseTest {
 		Assert.assertTrue(title.contains("Products"), "Next Page is not Loaded");
 	}
 
-	@Test(enabled = true, priority = 1)
+	@Test(enabled = true, priority = 1, groups = { "Smoke" })
 	public void fillFormTest_NegativeTest() {
 
 		formPage.formFill("Argentina", "", "male");

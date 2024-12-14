@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.qa.test.layer.AddToCartDataDriven"/>
+      <class name="com.qa.test.layer.AddToCartUsingStream"/>
+      <class name="com.qa.test.layer.CartPageTest"/>
+      <class name="com.qa.test.layer.AddToCart"/>
+      <class name="com.qa.test.layer.AddToCartDataDrivenWithStream"/>
+      <class name="com.qa.test.layer.FormFillingTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
