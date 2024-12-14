@@ -8,31 +8,24 @@ import com.qa.test.utils.BaseTest;
 
 public class AddToCartDataDriven extends BaseTest {
 
-	
 	@DataProvider
-    public Object[][] getProducts() {
-        return new Object[][]{
-            {new String[]{"Jordan 6 Rings", "Air Jordan 4 Retro"}}
-        };
-    }
-	
-	
-	@Test(dataProvider="getProducts")
-	public void addToCartTest_DataProvider(String [] productNames) {
-		formPage.countrySelection("Argentina");
-		formPage.setName("Raj");
-		formPage.genderSelection("male");
-		formPage.letsShopButton();
-		
-		/**With Stream Product Selection*/
+	public Object[][] getProducts() {
+		return new Object[][] { { new String[] { "Jordan 6 Rings", "Air Jordan 4 Retro" } } };
+	}
+
+	@Test(dataProvider = "getProducts")
+	public void addToCartTest_DataProvider(String[] productNames) {
+		formPage.formFill("Argentina", "Raj", "male");
+
+		/** With Stream Product Selection */
 		productPage.addMultipleProductsToCart(productNames);
 
-		/**Need to change this hard-coded value*/
+		/** Need to change this hard-coded value */
 		int productCount = productPage.verifyCountProduct();
-		Assert.assertTrue(productCount==2);
+		Assert.assertTrue(productCount == 2);
 		productPage.shopButton();
 		String title = formPage.nextPageTitle();
 		Assert.assertTrue(title.contains("Cart"), "Next Page is not Loaded");
 	}
-	
+
 }
