@@ -103,9 +103,7 @@
  
     <profile>
     <id>Smoke</id>
-    
     <build>
-    
     <resources>
 <resource>
 <directory>src/main/resources</directory>

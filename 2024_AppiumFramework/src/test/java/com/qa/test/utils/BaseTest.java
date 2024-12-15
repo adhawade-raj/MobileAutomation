@@ -19,9 +19,8 @@ public class BaseTest {
 	public AndroidActions androidActions;
 	public ProductPage productPage;
 	public CartPage cartPage;
-	
-	
-	@BeforeClass(alwaysRun=true)
+
+	@BeforeClass(alwaysRun = true)
 	public void initDriver() {
 		androidUtils = new AndroidUtils(driver);
 		driver = androidUtils.initDriver();
@@ -30,11 +29,10 @@ public class BaseTest {
 		productPage = new ProductPage(driver);
 		cartPage = new CartPage(driver);
 	}
-	
-	
+
 	@AfterClass()
 	public void tearDown() {
-		driver.quit();	
+		driver.quit();
 	}
-	
+
 }
