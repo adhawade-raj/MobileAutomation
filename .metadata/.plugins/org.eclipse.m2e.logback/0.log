@@ -12388,3 +12388,4 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag nam
 2024-12-15 17:57:52,452 [main] INFO  c.b.a.BrowserStackPropertyTester - Testing : isBrowserStackDisabled
 2024-12-15 17:57:52,453 [main] INFO  c.b.BrowserStackPluginActivator - Prefs Keys []
 2024-12-15 17:57:52,455 [main] INFO  c.b.a.BrowserStackPropertyTester - Validation Result isBrowserStackDisabled : false P/JavaStream_2024
+2024-12-15 18:03:26,668 [Worker-14: Launching SwitchCase_Java15] ERROR c.b.BrowserStackPluginActivator - Error in setJavaAgentVMArgs - java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.project.IMavenProjectFacade.getMavenProject(org.eclipse.core.runtime.IProgressMonitor)" because "prjFecade" is null
