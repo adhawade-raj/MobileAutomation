@@ -1,8 +1,0 @@
-package com.qa.TestLayer;
-
-public class AddToCartTest extends BaseTest {
-	
-	
-	
-
-}

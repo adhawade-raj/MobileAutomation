@@ -1,3 +1,11 @@
 1733028936657	Delete element
 1733028944144	Delete element
 1733041435493	Rename package 'TestLayer'
+1733585386817	Rename type 'AddToCartTest'
+1733585766448	Rename package 'com.qa.PageObjects'
+1733585771323	Rename package 'com.qa.Utils'
+1733585788985	Rename package 'com.qa.TestLayer'
+1733585797535	Rename package 'com.qa.TestUtils'
+1733585807732	Rename package 'com.qa.pageobjects'
+1733585819450	Rename package 'com.qa.testlayer'
+1733585824272	Rename package 'com.qa.testutils'
