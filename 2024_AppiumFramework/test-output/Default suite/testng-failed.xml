@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.TestLayer.AddToCartDataDriven">
+      <class name="com.qa.test.layer.FormFillingTest">
         <methods>
+          <include name="fillForm_PositiveTest"/>
           <include name="initDriver"/>
           <include name="tearDown"/>
-          <include name="addToCartTest_DataProvider" invocation-numbers="0"/>
+          <include name="fillFormTest_NegativeTest"/>
         </methods>
-      </class> <!-- com.qa.TestLayer.AddToCartDataDriven -->
+      </class> <!-- com.qa.test.layer.FormFillingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

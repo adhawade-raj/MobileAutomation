@@ -1,298 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-14T20:18:45 IST" name="Suite" finished-at="2024-12-14T20:18:47 IST" duration-ms="1984">
+  <suite started-at="2024-12-14T21:24:51 IST" name="Suite" finished-at="2024-12-14T21:27:10 IST" duration-ms="139883">
     <groups>
       <group name="Smoke">
-        <method signature="FormFillingTest.fillFormTest_NegativeTest()[pri:1, instance:com.qa.test.layer.FormFillingTest@2b58f754]" name="fillFormTest_NegativeTest" class="com.qa.test.layer.FormFillingTest"/>
-        <method signature="FormFillingTest.fillForm_PositiveTest()[pri:2, instance:com.qa.test.layer.FormFillingTest@2b58f754]" name="fillForm_PositiveTest" class="com.qa.test.layer.FormFillingTest"/>
+        <method signature="FormFillingTest.fillFormTest_NegativeTest()[pri:1, instance:com.qa.test.layer.FormFillingTest@5db6b9cd]" name="fillFormTest_NegativeTest" class="com.qa.test.layer.FormFillingTest"/>
+        <method signature="FormFillingTest.fillForm_PositiveTest()[pri:2, instance:com.qa.test.layer.FormFillingTest@5db6b9cd]" name="fillForm_PositiveTest" class="com.qa.test.layer.FormFillingTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-12-14T20:18:45 IST" name="End to end Framework Test" finished-at="2024-12-14T20:18:45 IST" duration-ms="717">
-      <class name="com.qa.test.layer.FormFillingTest">
-        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.qa.test.layer.FormFillingTest@2b58f754]" started-at="2024-12-14T20:18:45 IST" name="initDriver" finished-at="2024-12-14T20:18:45 IST" duration-ms="507" status="FAIL">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'LAPTOP-B0L2K8D2', ip: '192.168.233.109'
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: C:\Raj Setup\Mobile_Automat..., appium:automationName: UIAutomator2, appium:deviceName: Raj_AppiumTest, platformName: ANDROID}]}]
-Capabilities {appium:app: C:\Raj Setup\Mobile_Automat..., appium:automationName: UIAutomator2, appium:deviceName: Raj_AppiumTest, platformName: ANDROID}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'LAPTOP-B0L2K8D2', ip: '192.168.233.109'
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: C:\Raj Setup\Mobile_Automat..., appium:automationName: UIAutomator2, appium:deviceName: Raj_AppiumTest, platformName: ANDROID}]}]
-Capabilities {appium:app: C:\Raj Setup\Mobile_Automat..., appium:automationName: UIAutomator2, appium:deviceName: Raj_AppiumTest, platformName: ANDROID}
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:270)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:91)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:103)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
-at com.qa.utils.AndroidUtils.initDriver(AndroidUtils.java:103)
-at com.qa.test.utils.BaseTest.initDriver(BaseTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:496)
-at io.appium.java_client.internal.filters.AppiumIdempotencyFilter.lambda$apply$0(AppiumIdempotencyFilter.java:35)
-at io.appium.java_client.internal.filters.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:87)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.net.ConnectException
-at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:574)
-at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:455)
-... 9 more
-Caused by: java.net.ConnectException
-at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1055)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206)
-at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
-at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
-at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
-at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
-... 3 more
-Caused by: java.nio.channels.ClosedChannelException
-at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:195)
-at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:760)
-at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:848)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
-at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
-... 9 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+    <test started-at="2024-12-14T21:24:51 IST" name="Test" finished-at="2024-12-14T21:27:10 IST" duration-ms="139883">
+      <class name="com.qa.test.layer.AddToCartDataDriven">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.qa.test.layer.AddToCartDataDriven@50378a4]" started-at="2024-12-14T21:24:51 IST" name="initDriver" finished-at="2024-12-14T21:24:58 IST" duration-ms="7433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="fillFormTest_NegativeTest()[pri:1, instance:com.qa.test.layer.FormFillingTest@2b58f754]" started-at="2024-12-14T20:18:45 IST" name="fillFormTest_NegativeTest" finished-at="2024-12-14T20:18:45 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'LAPTOP-B0L2K8D2', ip: '192.168.233.109'
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: C:\Raj Setup\Mobile_Automat..., appium:automationName: UIAutomator2, appium:deviceName: Raj_AppiumTest, platformName: ANDROID}]}]
-Capabilities {appium:app: C:\Raj Setup\Mobile_Automat..., appium:automationName: UIAutomator2, appium:deviceName: Raj_AppiumTest, platformName: ANDROID}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'LAPTOP-B0L2K8D2', ip: '192.168.233.109'
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: C:\Raj Setup\Mobile_Automat..., appium:automationName: UIAutomator2, appium:deviceName: Raj_AppiumTest, platformName: ANDROID}]}]
-Capabilities {appium:app: C:\Raj Setup\Mobile_Automat..., appium:automationName: UIAutomator2, appium:deviceName: Raj_AppiumTest, platformName: ANDROID}
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:270)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:91)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:103)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
-at com.qa.utils.AndroidUtils.initDriver(AndroidUtils.java:103)
-at com.qa.test.utils.BaseTest.initDriver(BaseTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:496)
-at io.appium.java_client.internal.filters.AppiumIdempotencyFilter.lambda$apply$0(AppiumIdempotencyFilter.java:35)
-at io.appium.java_client.internal.filters.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:87)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.net.ConnectException
-at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:574)
-at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:455)
-... 9 more
-Caused by: java.net.ConnectException
-at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1055)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206)
-at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
-at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
-at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
-at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
-... 3 more
-Caused by: java.nio.channels.ClosedChannelException
-at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:195)
-at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:760)
-at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:848)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
-at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
-... 9 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="addToCartTest_DataProvider([Ljava.lang.String;)[pri:0, instance:com.qa.test.layer.AddToCartDataDriven@50378a4]" started-at="2024-12-14T21:24:58 IST" name="addToCartTest_DataProvider" data-provider="getProducts" finished-at="2024-12-14T21:25:22 IST" duration-ms="23672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@608bc8f8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest_DataProvider -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.layer.AddToCartDataDriven@50378a4]" started-at="2024-12-14T21:25:22 IST" name="tearDown" finished-at="2024-12-14T21:25:22 IST" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.test.layer.AddToCartDataDriven -->
+      <class name="com.qa.test.layer.CartPageTest">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.qa.test.layer.CartPageTest@1b1cfb87]" started-at="2024-12-14T21:25:22 IST" name="initDriver" finished-at="2024-12-14T21:25:29 IST" duration-ms="7127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="verifyCartTotalTest()[pri:0, instance:com.qa.test.layer.CartPageTest@1b1cfb87]" started-at="2024-12-14T21:25:29 IST" name="verifyCartTotalTest" finished-at="2024-12-14T21:25:49 IST" duration-ms="20237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartTotalTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.layer.CartPageTest@1b1cfb87]" started-at="2024-12-14T21:25:49 IST" name="tearDown" finished-at="2024-12-14T21:25:50 IST" duration-ms="567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.test.layer.CartPageTest -->
+      <class name="com.qa.test.layer.FormFillingTest">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.qa.test.layer.FormFillingTest@5db6b9cd]" started-at="2024-12-14T21:26:48 IST" name="initDriver" finished-at="2024-12-14T21:26:56 IST" duration-ms="7734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="fillFormTest_NegativeTest()[pri:1, instance:com.qa.test.layer.FormFillingTest@5db6b9cd]" started-at="2024-12-14T21:26:56 IST" name="fillFormTest_NegativeTest" finished-at="2024-12-14T21:27:05 IST" duration-ms="9026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillFormTest_NegativeTest -->
-        <test-method signature="fillForm_PositiveTest()[pri:2, instance:com.qa.test.layer.FormFillingTest@2b58f754]" started-at="2024-12-14T20:18:45 IST" name="fillForm_PositiveTest" finished-at="2024-12-14T20:18:45 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'LAPTOP-B0L2K8D2', ip: '192.168.233.109'
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: C:\Raj Setup\Mobile_Automat..., appium:automationName: UIAutomator2, appium:deviceName: Raj_AppiumTest, platformName: ANDROID}]}]
-Capabilities {appium:app: C:\Raj Setup\Mobile_Automat..., appium:automationName: UIAutomator2, appium:deviceName: Raj_AppiumTest, platformName: ANDROID}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'LAPTOP-B0L2K8D2', ip: '192.168.233.109'
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:app: C:\Raj Setup\Mobile_Automat..., appium:automationName: UIAutomator2, appium:deviceName: Raj_AppiumTest, platformName: ANDROID}]}]
-Capabilities {appium:app: C:\Raj Setup\Mobile_Automat..., appium:automationName: UIAutomator2, appium:deviceName: Raj_AppiumTest, platformName: ANDROID}
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:270)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:91)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:103)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
-at com.qa.utils.AndroidUtils.initDriver(AndroidUtils.java:103)
-at com.qa.test.utils.BaseTest.initDriver(BaseTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:496)
-at io.appium.java_client.internal.filters.AppiumIdempotencyFilter.lambda$apply$0(AppiumIdempotencyFilter.java:35)
-at io.appium.java_client.internal.filters.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:87)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:383)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.net.ConnectException
-at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:574)
-at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:455)
-... 9 more
-Caused by: java.net.ConnectException
-at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1055)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206)
-at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
-at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
-at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
-at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
-... 3 more
-Caused by: java.nio.channels.ClosedChannelException
-at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:195)
-at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:760)
-at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:848)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
-at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
-... 9 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="fillForm_PositiveTest()[pri:2, instance:com.qa.test.layer.FormFillingTest@5db6b9cd]" started-at="2024-12-14T21:27:05 IST" name="fillForm_PositiveTest" finished-at="2024-12-14T21:27:10 IST" duration-ms="4881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillForm_PositiveTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.layer.FormFillingTest@5db6b9cd]" started-at="2024-12-14T21:27:10 IST" name="tearDown" finished-at="2024-12-14T21:27:10 IST" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.qa.test.layer.FormFillingTest -->
-    </test> <!-- End to end Framework Test -->
-    <test started-at="2024-12-14T20:18:47 IST" name="Error Validations Test" finished-at="2024-12-14T20:18:47 IST" duration-ms="1">
-    </test> <!-- Error Validations Test -->
+      <class name="com.qa.test.layer.AddToCartDataDrivenWithStream">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.qa.test.layer.AddToCartDataDrivenWithStream@6f43c82]" started-at="2024-12-14T21:26:17 IST" name="initDriver" finished-at="2024-12-14T21:26:25 IST" duration-ms="7425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="addToCartTest_DataProvider([Ljava.lang.String;)[pri:0, instance:com.qa.test.layer.AddToCartDataDrivenWithStream@6f43c82]" started-at="2024-12-14T21:26:25 IST" name="addToCartTest_DataProvider" data-provider="getProducts" finished-at="2024-12-14T21:26:48 IST" duration-ms="23200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@5412bfea]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest_DataProvider -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.layer.AddToCartDataDrivenWithStream@6f43c82]" started-at="2024-12-14T21:26:48 IST" name="tearDown" finished-at="2024-12-14T21:26:48 IST" duration-ms="396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.test.layer.AddToCartDataDrivenWithStream -->
+      <class name="com.qa.test.layer.AddToCart">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.qa.test.layer.AddToCart@821330f]" started-at="2024-12-14T21:25:50 IST" name="initDriver" finished-at="2024-12-14T21:25:57 IST" duration-ms="7242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="addToCartTest()[pri:0, instance:com.qa.test.layer.AddToCart@821330f]" started-at="2024-12-14T21:25:57 IST" name="addToCartTest" finished-at="2024-12-14T21:26:17 IST" duration-ms="19683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.layer.AddToCart@821330f]" started-at="2024-12-14T21:26:17 IST" name="tearDown" finished-at="2024-12-14T21:26:17 IST" duration-ms="378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.test.layer.AddToCart -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
