@@ -16,7 +16,7 @@ public class A01_BasicAppiumTest {
 		
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Raj_AppiumTest");
-		options.setApp("C:\\Raj Setup\\Mobile_Automation\\2024_Appium\\src\\test\\resource\\ApiDemos-debug.apk");
+		options.setApp("D:\\Eclipse_VSCode\\MobileTesting\\Appium_2024\\src\\test\\resource\\ApiDemos-debug.apk");
 		
 		AndroidDriver driver = new AndroidDriver(new URL("http://0.0.0.0:4723"), options);
 		driver.quit();

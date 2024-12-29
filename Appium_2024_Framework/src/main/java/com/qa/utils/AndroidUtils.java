@@ -26,14 +26,14 @@ public class AndroidUtils {
 	Properties prop;
 	FileUtils fileUtils;
 	String fileSeparator = File.separator;
-	String configFilePath = "C:\\Raj Setup\\Mobile_Automation\\2024_AppiumFramework\\src\\test\\resource\\TestData\\config.properties"
+	String configFilePath = "D:\\Eclipse_VSCode\\MobileTesting\\Appium_2024_Framework\\src\\test\\resource\\TestData\\config.properties"
 			.replace("\\", fileSeparator);
-	String chromeDriverPath = "C:\\Raj Setup\\ChromeDriver\\V 131\\chromedriver-win64\\chromedriver.exe".replace("\\",
+	String chromeDriverPath = "D:\\Eclipse_VSCode\\MobileTesting\\Appium_2024_Framework\\src\\test\\resource\\TestData\\chromedriver.exe".replace("\\",
 			fileSeparator);
-	String mainJSPath = "C:\\Users\\SHRUTI\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"
+	String mainJSPath = "C:\\Users\\Raj\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"
 			.replace("\\", fileSeparator);
 	String nodeJSPath = "C:\\Program Files\\nodejs\\node.exe".replace("\\", fileSeparator);;
-	String apkFile = "C:\\Raj Setup\\Mobile_Automation\\2024_Appium\\src\\test\\resource\\General-Store.apk"
+	String apkFile = "D:\\Eclipse_VSCode\\MobileTesting\\Appium_2024_Framework\\src\\test\\resource\\TestData\\General-Store.apk"
 			.replace("\\", fileSeparator);
 	String ipAddress;
 	String port;

@@ -29,7 +29,7 @@ public class BaseTest {
 	public void appiumServerConfiguration() {
 		
 		AppiumDriverLocalService service = new AppiumServiceBuilder()
-				.withAppiumJS(new File("C:/Users/SHRUTI/AppData/Roaming/npm/node_modules/appium/build/lib/main.js"))
+				.withAppiumJS(new File("C:\\Users\\Raj\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
 				.usingDriverExecutable(new File ("C:\\Program Files\\nodejs\\node.exe"))
 				.withIPAddress("0.0.0.0").usingPort(4723).build();
 				
@@ -44,7 +44,7 @@ public class BaseTest {
 		Properties prop =new Properties();
 		
 		try {
-			fis = new FileInputStream("C:\\Raj Setup\\Mobile_Automation\\2024_AppiumFramework\\src\\test\\resource\\TestData\\config.properties");
+			fis = new FileInputStream("D:\\Eclipse_VSCode\\MobileTesting\\Appium_2024_Framework_FactoryMethod\\src\\test\\resource\\TestData\\config.properties");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -57,9 +57,9 @@ public class BaseTest {
 				UiAutomator2Options options = new UiAutomator2Options();
 				options.setDeviceName(prop.getProperty("deviceName"));
 				
-				System.setProperty("webdriver.chrome.driver", "C:\\Raj Setup\\ChromeDriver\\V 131\\chromedriver-win64\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "D:\\Eclipse_VSCode\\MobileTesting\\Appium_2024_Framework_FactoryMethod\\src\\test\\resource\\TestData\\chromedriver.exe");
 //				options.setChromedriverExecutable("C:\\Raj Setup\\ChromeDriver\\V 131\\chromedriver-win64\\chromedriver.exe");
-				options.setApp("C:\\Raj Setup\\Mobile_Automation\\2024_Appium\\src\\test\\resource\\General-Store.apk");
+				options.setApp("D:\\Eclipse_VSCode\\MobileTesting\\Appium_2024_Framework_FactoryMethod\\src\\test\\resource\\TestData\\General-Store.apk");
 				
 				 try {
 					driver = new AndroidDriver(new URL("http://0.0.0.0:4723"), options);

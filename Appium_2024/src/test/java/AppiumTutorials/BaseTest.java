@@ -26,7 +26,7 @@ public class BaseTest {
 	public void appiumServerConfiguration() {
 		
 		AppiumDriverLocalService service = new AppiumServiceBuilder()
-				.withAppiumJS(new File("C:/Users/SHRUTI/AppData/Roaming/npm/node_modules/appium/build/lib/main.js"))
+				.withAppiumJS(new File("C:\\Users\\Raj\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
 				.usingDriverExecutable(new File ("C:\\Program Files\\nodejs\\node.exe"))
 				.withIPAddress("0.0.0.0").usingPort(4723).build();
 				

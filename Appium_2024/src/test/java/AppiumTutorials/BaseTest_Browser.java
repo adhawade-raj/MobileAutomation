@@ -22,7 +22,7 @@ public class BaseTest_Browser {
 	public void appiumServerConfiguration() {
 		
 		AppiumDriverLocalService service = new AppiumServiceBuilder()
-				.withAppiumJS(new File("C:/Users/SHRUTI/AppData/Roaming/npm/node_modules/appium/build/lib/main.js"))
+				.withAppiumJS(new File("C:\\Users\\Raj\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
 				.usingDriverExecutable(new File ("C:\\Program Files\\nodejs\\node.exe"))
 				.withIPAddress("0.0.0.0").usingPort(4723).build();
 				
@@ -37,7 +37,7 @@ public class BaseTest_Browser {
 				UiAutomator2Options options = new UiAutomator2Options();
 				options.setDeviceName("Raj_AppiumTest");
 				
-				System.setProperty("webdriver.chrome.driver", "C:\\Raj Setup\\ChromeDriver\\V 131\\chromedriver-win64\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "D:\\Eclipse_VSCode\\MobileTesting\\Appium_2024\\src\\test\\resource\\chromedriver.exe\\chromedriver.exe");
 				options.setCapability("browserName", "Chrome");
 //				options.setChromedriverExecutable("C:\\Raj Setup\\ChromeDriver\\V 131\\chromedriver-win64\\chromedriver.exe");
 				

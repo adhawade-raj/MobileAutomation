@@ -27,7 +27,7 @@ public class BaseTest_StoreAPK {
 	public void appiumServerConfiguration() {
 		
 		AppiumDriverLocalService service = new AppiumServiceBuilder()
-				.withAppiumJS(new File("C:/Users/SHRUTI/AppData/Roaming/npm/node_modules/appium/build/lib/main.js"))
+				.withAppiumJS(new File("C:\\Users\\Raj\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
 				.usingDriverExecutable(new File ("C:\\Program Files\\nodejs\\node.exe"))
 				.withIPAddress("0.0.0.0").usingPort(4723).build();
 				
@@ -44,7 +44,7 @@ public class BaseTest_StoreAPK {
 				
 				System.setProperty("webdriver.chrome.driver", "C:\\Raj Setup\\ChromeDriver\\V 131\\chromedriver-win64\\chromedriver.exe");
 //				options.setChromedriverExecutable("C:\\Raj Setup\\ChromeDriver\\V 131\\chromedriver-win64\\chromedriver.exe");
-				options.setApp("C:\\Raj Setup\\Mobile_Automation\\2024_Appium\\src\\test\\resource\\General-Store.apk");
+				options.setApp("D:\\Eclipse_VSCode\\MobileTesting\\Appium_2024\\src\\test\\resource\\General-Store.apk");
 				
 				 try {
 					driver = new AndroidDriver(new URL("http://0.0.0.0:4723"), options);
