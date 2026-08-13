@@ -1,0 +1,11 @@
+{
+  "name": "appium-percy-tests",
+  "version": "1.0.0",
+  "description": "Appium tests with Percy visual testing",
+  "scripts": {
+    "test": "gradle test"
+  },
+  "devDependencies": {
+    "@percy/cli": "^1.28.0"
+  }
+}

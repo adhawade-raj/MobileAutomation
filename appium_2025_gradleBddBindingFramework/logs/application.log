@@ -1,0 +1,56 @@
+2025-02-02 10:47:30 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 10:47:41 INFO  com.qa.test.hooks.BasePage - ******* Driver fetched in BasePage: true
+2025-02-02 10:54:28 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 10:54:35 INFO  com.qa.test.hooks.BasePage - ******* Driver fetched in BasePage: true
+2025-02-02 10:55:06 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 10:55:14 INFO  com.qa.test.hooks.BasePage - ******* Driver fetched in BasePage: true
+2025-02-02 10:59:35 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 10:59:42 INFO  com.qa.test.hooks.BasePage - ******* Driver fetched in BasePage: true
+2025-02-02 11:15:46 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 11:15:53 INFO  com.qa.test.hooks.BasePage - ******* Driver fetched in BasePage: true
+2025-02-02 11:17:04 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 11:18:53 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 11:18:58 INFO  com.qa.test.hooks.BasePage - ******* Driver fetched in BasePage: true
+2025-02-02 11:21:18 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 11:49:34 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 11:49:40 INFO  com.qa.test.hooks.BasePage - ******* Driver fetched in BasePage: true
+2025-02-02 12:01:03 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 12:01:09 INFO  com.qa.test.hooks.BasePage - ******* Driver fetched in BasePage: true
+2025-02-02 12:08:49 INFO  com.qa.test.hooks.BasePage - ******* Driver fetched in BasePage: false
+2025-02-02 12:09:32 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 12:09:44 INFO  com.qa.test.hooks.BasePage - ******* Driver fetched in BasePage: true
+2025-02-02 12:23:52 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 12:24:37 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 12:28:04 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 12:31:45 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 12:31:52 INFO  com.qa.test.hooks.BasePage - ******* Driver fetched in BasePage: true
+2025-02-02 12:32:51 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 12:32:58 INFO  com.qa.test.hooks.BasePage - ******* Driver fetched in BasePage: true
+2025-02-02 12:33:31 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-02 12:33:37 INFO  com.qa.test.hooks.BasePage - ******* Driver fetched in BasePage: true
+2025-02-03 19:54:25 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 19:58:52 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:03:04 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:04:17 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:05:30 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:07:20 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:15:25 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:15:25 INFO  com.qa.test.hooks.Hooks - ******** Closing Driver ********
+2025-02-03 20:16:13 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:16:13 INFO  com.qa.test.hooks.Hooks - ******** Closing Driver ********
+2025-02-03 20:16:27 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:16:27 INFO  com.qa.test.hooks.Hooks - ******** Closing Driver ********
+2025-02-03 20:19:22 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:19:22 INFO  com.qa.test.hooks.Hooks - ******** Closing Driver ********
+2025-02-03 20:24:45 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:24:45 INFO  com.qa.test.hooks.Hooks - ******** Closing Driver ********
+2025-02-03 20:34:55 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:34:56 INFO  com.qa.test.hooks.Hooks - ******** Closing Driver ********
+2025-02-03 20:41:12 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:41:33 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:46:30 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:50:46 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:52:32 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:53:36 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-03 20:54:58 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********
+2025-02-16 19:35:28 INFO  com.qa.test.hooks.Hooks - ******** Initializing Driver ********

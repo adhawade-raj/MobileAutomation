@@ -1,0 +1,32 @@
+name: Percy Visual Tests
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  visual-tests:
+    runs-on: ubuntu-latest
+    env:
+      PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+      BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+      BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+      BROWSERSTACK_APP_ID: ${{ secrets.BROWSERSTACK_APP_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - name: Install Node (for Percy CLI)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install Percy CLI
+        run: npm install -g @percy/cli
+      - name: Run visual tests under Percy
+        run: |
+          percy exec -- ./gradlew test --tests "org.example.runners.CucumberVisualRunner"
+

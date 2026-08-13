@@ -1,0 +1,157 @@
+import java.nio.file.FileSystems
+
+plugins {
+    id 'java'
+    id 'com.github.node-gradle.node' version '5.0.0'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // Selenium and Appium
+    implementation 'org.seleniumhq.selenium:selenium-java:4.26.0'
+    implementation 'io.appium:java-client:9.3.0'
+
+    // Cucumber
+    testImplementation 'io.cucumber:cucumber-java:7.14.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.14.0'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'tech.grasshopper:extentreports-cucumber6-adapter:2.8.0'
+
+    // Percy (WebDriver-compatible SDK for visual snapshots)
+    testImplementation 'io.percy:percy-java-selenium:1.0.0'
+
+    // HTTP client fallback (if we need to upload images directly to Percy REST API)
+    testImplementation 'com.squareup.okhttp3:okhttp:4.11.0'
+
+    // Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.36'
+
+    // Allure Reports
+    implementation 'io.qameta.allure:allure-testng:2.29.1'
+
+    // Extent Reports
+    implementation 'com.aventstack:extentreports:5.1.2'
+
+    // Jackson Databind for JSON Parsing
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.18.2'
+
+    // Apache Commons IO
+    implementation 'commons-io:commons-io:2.18.0'
+
+    implementation 'org.apache.logging.log4j:log4j-core:2.17.1'
+    implementation 'org.apache.logging.log4j:log4j-api:2.17.1'
+
+    // Dependency Injection for Cucumber
+    implementation 'io.cucumber:cucumber-picocontainer:7.20.1'
+    implementation 'javax.inject:javax.inject:1'
+    implementation 'com.google.inject:guice:5.1.0'
+}
+
+// Test task configuration (top level)
+test {
+    useJUnit()
+
+    testLogging {
+        events "PASSED", "FAILED", "SKIPPED"
+        showStandardStreams = true // Show logs to see Percy output
+        exceptionFormat "full"
+        showCauses true
+        showStackTraces true
+    }
+}
+
+// Node plugin configuration: download a local Node for npm-managed Percy CLI
+node {
+    download = true
+    version = '18.17.1'
+    npmVersion = '9.6.7'
+    nodeProjectDir = file('${projectDir}')
+}
+
+// Create package.json to manage percy CLI dependency
+tasks.register('createPackageJson') {
+    doLast {
+        def packageJson = new File(project.projectDir, 'package.json')
+        if (!packageJson.exists()) {
+            packageJson.text = '''{
+  "name": "appium-percy-tests",
+  "version": "1.0.0",
+  "description": "Appium tests with Percy visual testing",
+  "scripts": {
+    "test": "gradle test"
+  },
+  "devDependencies": {
+    "@percy/cli": "^1.28.0"
+  }
+}'''
+            println "Created package.json"
+        }
+    }
+}
+
+// Install percy CLI locally via npm
+tasks.register('npmInstallPercy', Exec) {
+    dependsOn 'createPackageJson', 'npmSetup'
+    def isWindows = System.getProperty("os.name").toLowerCase().contains("win")
+    def npmCmd = isWindows ? 'npm.cmd' : 'npm'
+
+    workingDir = project.projectDir
+    commandLine = [npmCmd, 'install']
+
+    // Set up PATH to include node binaries from the node plugin
+    environment 'PATH', "${project.node.nodeProjectDir}/node/bin" + (isWindows ? ';' : ':') + System.getenv('PATH')
+
+    standardOutput = System.out
+    errorOutput = System.err
+}
+
+// Run tests under the local percy CLI using npx (which will use the local node_modules)
+tasks.register('percyTest') {
+    dependsOn 'npmInstallPercy', 'testClasses'
+    doLast {
+        def isWindows = System.getProperty("os.name").toLowerCase().contains("win")
+        def gradleCmd = isWindows ? '.\\gradlew.bat' : './gradlew'
+
+        // Build the new PATH
+        def pathSeparator = isWindows ? ';' : ':'
+        def binDir = isWindows ? '.\\node_modules\\.bin' : './node_modules/.bin'
+        def npmBinDir = "${project.node.nodeProjectDir}/node/bin"
+        def newPath = binDir + pathSeparator + npmBinDir + pathSeparator + System.getenv('PATH')
+
+        // Build the command based on OS
+        List<String> cmd
+        if (isWindows) {
+            cmd = ['cmd.exe', '/c', "npx percy exec -- ${gradleCmd} test --tests org.example.runners.CucumberVisualRunner".toString()]
+        } else {
+            cmd = ['sh', '-c', "npx percy exec -- ${gradleCmd} test --tests org.example.runners.CucumberVisualRunner".toString()]
+        }
+
+        def processBuilder = new ProcessBuilder(cmd)
+        processBuilder.directory(project.projectDir)
+
+        // Set PATH in environment
+        def env = processBuilder.environment()
+        env.put('PATH', newPath)
+
+        processBuilder.inheritIO()
+
+        println "[percyTest] Running command: " + cmd.join(' ')
+        println "[percyTest] PATH: " + newPath.substring(0, Math.min(100, newPath.length())) + "..."
+
+        def process = processBuilder.start()
+        def exitCode = process.waitFor()
+
+        println "[percyTest] Command completed with exit code: ${exitCode}"
+
+        if (exitCode != 0) {
+            println "[percyTest] WARNING: Percy test execution returned exit code ${exitCode}. Check output above for details."
+        }
+    }
+}

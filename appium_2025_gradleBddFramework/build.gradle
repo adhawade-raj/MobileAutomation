@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // Selenium and Appium
+    implementation 'org.seleniumhq.selenium:selenium-java:4.26.0'
+    implementation 'io.appium:java-client:9.3.0'
+
+    // Cucumber
+    testImplementation 'io.cucumber:cucumber-java:7.14.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.14.0'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'tech.grasshopper:extentreports-cucumber6-adapter:2.8.0'
+
+    // Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.36'
+
+    // Allure Reports
+    implementation 'io.qameta.allure:allure-testng:2.29.1'
+
+    // Extent Reports
+    implementation 'com.aventstack:extentreports:5.1.2'
+
+    // Jackson Databind for JSON Parsing
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.18.2'
+
+    // Apache Commons IO
+    implementation 'commons-io:commons-io:2.18.0'
+
+    implementation 'org.apache.logging.log4j:log4j-core:2.17.1'
+    implementation 'org.apache.logging.log4j:log4j-api:2.17.1'
+
+    // Dependency Injection for Cucumber
+    implementation 'io.cucumber:cucumber-picocontainer:7.20.1'
+    implementation 'javax.inject:javax.inject:1'
+    implementation 'com.google.inject:guice:5.1.0'
+
+    test {
+        useJUnit()
+
+        testLogging {
+            events "PASSED", "FAILED", "SKIPPED"
+            showStandardStreams = false // Optional: Logs test output in the console
+        }
+    }
+}

@@ -1,0 +1,10 @@
+version: 2
+static:
+  cleanUrls: true
+discovery:
+  enabled: false
+app:
+  include: /
+  exclude:
+  static-snapshots: false
+

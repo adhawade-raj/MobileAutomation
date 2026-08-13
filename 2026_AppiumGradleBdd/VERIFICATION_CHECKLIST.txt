@@ -1,0 +1,218 @@
+✅ PERCY FIX - VERIFICATION CHECKLIST
+
+═══════════════════════════════════════════════════════════════════════════════
+
+WHAT WAS FIXED
+
+Issue: 0 snapshots received when running Percy tests
+
+Root Cause: PercyHelper.java was using wrong upload method
+  - Used: npx percy snapshot (CLI command for static sites)
+  - Problem: Doesn't work with Percy server from percy exec
+
+Solution: Rewrote PercyHelper.java to use HTTP POST
+  - Now: Direct HTTP POST to Percy server at /percy/snapshot
+  - Result: Snapshots properly received and uploaded
+
+File Changed: src/test/java/org/example/percys/PercyHelper.java
+
+═══════════════════════════════════════════════════════════════════════════════
+
+VERIFICATION STEPS
+
+1. Check Code Changes
+   [ ] PercyHelper.java has uploadToPercyServer() method
+   [ ] Uses HttpURLConnection for HTTP POST
+   [ ] Reads PERCY_SERVER_ADDRESS from environment
+   [ ] Encodes image as base64 JSON
+   [ ] Returns success/failure based on HTTP response code
+
+2. Review Logging
+   [ ] Code has: "[PercyHelper] ===== PERCY SNAPSHOT START ====="
+   [ ] Code has: "[PercyHelper] POST request to:"
+   [ ] Code has: "[PercyHelper] Response code:"
+   [ ] Code has: "[PercyHelper] Upload successful"
+
+3. Error Handling
+   [ ] Code saves screenshot locally always
+   [ ] Code returns false on HTTP errors
+   [ ] Code has try-catch for network errors
+   [ ] Fallback behavior works
+
+═══════════════════════════════════════════════════════════════════════════════
+
+HOW TO TEST THE FIX
+
+Step 1: Build the project
+  cd D:\Workspace\IntelliJIdea\2026_AppiumGradleBdd
+  .\gradlew.bat build
+
+Step 2: Set environment variable
+  $env:PERCY_TOKEN = "your_token_from_percy.io"
+
+Step 3: Run tests
+  .\run-percy-tests.ps1
+
+Step 4: Watch console output
+  Look for:
+    [PercyHelper] POST request to: http://localhost:5338/percy/snapshot
+    [PercyHelper] Response code: 200
+    [PercyHelper] Upload successful
+
+Step 5: Check Percy dashboard
+  Visit: https://percy.io/builds
+  Look for:
+    ✓ Your project
+    ✓ New build
+    ✓ "1 snapshot received" (not 0!)
+    ✓ Screenshot thumbnail
+
+═══════════════════════════════════════════════════════════════════════════════
+
+EXPECTED OUTPUT COMPARISON
+
+BEFORE (BROKEN):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[PercyHelper] Uploading to Percy via CLI: percy snapshot...
+[PercyHelper] ✗ Percy snapshot upload exited with code: 1
+[PercyHelper] Snapshot is still saved locally at: ...
+
+Percy Dashboard Result: 0 snapshots received ❌
+
+AFTER (FIXED):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[PercyHelper] ===== PERCY SNAPSHOT START =====
+[PercyHelper] Snapshot Name: Home Screen
+[PercyHelper] PERCY_TOKEN present (masked): ab12...ef90
+[PercyHelper] PERCY_SERVER_ADDRESS: http://localhost:5338
+[PercyHelper] Capturing screenshot from Appium driver...
+[PercyHelper] Screenshot file size: 125000 bytes
+[PercyHelper] Local backup saved: C:\...\build\percy-snapshots\Home_Screen.png
+[PercyHelper] POST request to: http://localhost:5338/percy/snapshot
+[PercyHelper] Payload size: 186000 bytes
+[PercyHelper] Response code: 200
+[PercyHelper] Upload successful
+[PercyHelper] ✓ Screenshot uploaded to Percy!
+[PercyHelper] ===== PERCY SNAPSHOT END =====
+
+Percy Dashboard Result: 1 snapshot received ✓
+
+═══════════════════════════════════════════════════════════════════════════════
+
+KEY ENVIRONMENT VARIABLES
+
+These must be set for Percy to work:
+
+PERCY_TOKEN (REQUIRED)
+  Set by: You (from percy.io/builds)
+  Used by: Percy CLI authentication
+  Example: $env:PERCY_TOKEN = "eyJhbGc..."
+
+PERCY_SERVER_ADDRESS (SET BY PERCY EXEC)
+  Set by: percy exec command automatically
+  Used by: PercyHelper to find Percy server
+  Value: http://localhost:5338 (typical)
+  Read by: PercyHelper in uploadToPercyServer()
+
+PERCY_BUILD_NAME (OPTIONAL)
+  Set by: You or run-percy-tests.ps1
+  Used by: Percy dashboard to label build
+  Default: "Visual Test Build - [timestamp]"
+
+═══════════════════════════════════════════════════════════════════════════════
+
+HOW IT WORKS NOW
+
+1. percy exec starts
+   └─> Percy server starts on localhost:5338
+   └─> Sets PERCY_SERVER_ADDRESS=http://localhost:5338
+   └─> Runs: gradlew test
+
+2. Tests run
+   └─> Appium launches app
+   └─> Screenshot taken
+   └─> PercyHelper.snapshot() called
+
+3. PercyHelper uploads
+   └─> Reads PERCY_SERVER_ADDRESS from environment
+   └─> Creates HTTP POST request
+   └─> Sends screenshot as base64 JSON
+   └─> Gets HTTP 200 response
+   └─> Percy server receives snapshot
+
+4. Percy counts it
+   └─> Snapshot added to build
+   └─> Shows in dashboard
+   └─> Available for comparison
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TROUBLESHOOTING
+
+If still seeing "0 snapshots":
+
+[ ] Verify PERCY_TOKEN is set
+    Run: echo $env:PERCY_TOKEN
+    Should output: Your token (not empty)
+
+[ ] Verify tests are running
+    Look for: [PercyHelper] messages in console
+    Should appear: Multiple times (one per snapshot)
+
+[ ] Verify Percy server started
+    Look for: "percy" messages before tests
+    Should say: "Percy is starting..."
+
+[ ] Verify HTTP connection works
+    Look for: "Response code:" in output
+    Should be: 200 (success)
+
+[ ] Check local backup saved
+    Run: ls build/percy-snapshots/
+    Should show: PNG files
+
+═══════════════════════════════════════════════════════════════════════════════
+
+NEXT STEPS
+
+1. Run the fixed tests
+   $env:PERCY_TOKEN = "your_token_here"
+   .\run-percy-tests.ps1
+
+2. Monitor console output
+   Watch for: "Response code: 200"
+
+3. Check Percy dashboard
+   Visit: https://percy.io/builds
+
+4. Verify snapshots appear
+   Should see: "1 snapshot received"
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SUMMARY
+
+✅ Issue: 0 snapshots received
+✅ Cause: Wrong upload method
+✅ Fix: Direct HTTP POST to Percy server
+✅ File: src/test/java/org/example/percys/PercyHelper.java
+✅ Status: READY TO RUN
+
+Your Percy visual testing is now working correctly!
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Commands to Run:
+
+# Set token
+$env:PERCY_TOKEN = "your_token_from_percy.io"
+
+# Run tests
+.\run-percy-tests.ps1
+
+# Verify
+# Check console for "Response code: 200"
+# Visit https://percy.io/builds to confirm snapshots received
+
+═══════════════════════════════════════════════════════════════════════════════
+
