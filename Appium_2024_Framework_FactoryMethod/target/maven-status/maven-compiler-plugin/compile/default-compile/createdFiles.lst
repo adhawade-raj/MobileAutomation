@@ -1,6 +1,0 @@
-pageObjects\android\ProductCatalogue.class
-pageObjects\android\FormPage.class
-utils\android\AndroidActions.class
-pageObjects\android\CartPage.class
-utils\android\AppiumUtils$1.class
-utils\android\AppiumUtils.class

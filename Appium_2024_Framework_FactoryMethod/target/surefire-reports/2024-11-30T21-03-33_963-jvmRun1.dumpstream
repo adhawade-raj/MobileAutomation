@@ -1,6 +1,0 @@
-# Created at 2024-11-30T21:03:34.172
-Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Error occurred during initialization of VM'.
-
-# Created at 2024-11-30T21:03:34.177
-Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'agent library failed to init: instrument'.
-
