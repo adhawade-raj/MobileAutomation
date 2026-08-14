@@ -40,3 +40,20 @@ tmp/
 local.properties
 .loadpath
 .factorypath
+
+# IDEs
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+build/
+
+# Test / reports
+test-output/
+
+# Misc
+.DS_Store
+*.log
+logs/
+.vscode/
