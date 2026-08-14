@@ -5,13 +5,13 @@ MobileAutomation is an Appium-based Java test automation framework for mobile ap
 ## Tech stack
 - Java 17
 - Maven
-- Appium Java Client
+- appium java client
 - Selenium
 - TestNG
 - BrowserStack (optional)
 
 ## Repository layout
-- appium-2024-Appium_2024_Framework_FactoryMethod/  — main framework and test code (pom.xml, testng.xml, browserstack.yml)
+- appium-2024-appium_2024_framework_factorymethod/  — main framework and test code (pom.xml, testng.xml, browserstack.yml)
 
 ## Requirements
 - Java 17 or newer
