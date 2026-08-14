@@ -11,7 +11,7 @@ MobileAutomation is an Appium-based Java test automation framework for mobile ap
 - BrowserStack (optional)
 
 ## Repository layout
-- appium-24-framework-factorymethod/  — main framework and test code (pom.xml, testng.xml, browserstack.yml)
+- appium-2024-framework-factorymethod/  — main framework and test code (pom.xml, testng.xml, browserstack.yml)
 
 ## Requirements
 - Java 17 or newer
@@ -24,7 +24,7 @@ MobileAutomation is an Appium-based Java test automation framework for mobile ap
 
 ## Running tests
 1. From the project root:
-   cd appium-24-framework-factorymethod
+   cd appium-2024-framework-factorymethod
 2. Run Smoke suite:
    mvn test -P Smoke
 3. Run Regression suite:
@@ -37,4 +37,5 @@ TestNG and Surefire reports are available under target/surefire-reports. Extent 
 
 ## Notes
 Do not commit credentials. Use environment variables or secure secrets management to store API keys and access tokens.
+
 
